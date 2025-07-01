@@ -19,7 +19,7 @@ menu: # This part will be visible if we click the papers or news.
           url: papers/
           weight: 2
         - name: News
-          url: archive/
+          url: News/
           weight: 7
         # - name: Courses
         #   url: courses/
@@ -84,7 +84,7 @@ params:
             # - name: Tags
             #   url: tags/
             - name: News
-              url: archive/
+              url: News/
             # - name: Blog
             #   url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
 
