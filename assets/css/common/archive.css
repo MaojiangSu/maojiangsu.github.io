@@ -21,6 +21,32 @@
     padding: 10px 0;
 }
 
+
+/* 在 archive.css 文件中添加这些规则 */
+
+/* 针对存档页面中的年份标题（如果它是<a>标签）*/
+/* 根据你之前的截图，`archive-year-header` 是 `h2` 标签，所以它会受到 `h1-h6` 的 `color: var(--primary);` 影响，
+   但如果它内部有链接，或者像“2021”本身是链接，则需要额外处理 */
+.archive-year-header a { /* 如果年份标题内部有链接 */
+    color: var(--primary);
+}
+/* 另一种情况是 `.archive-year-header` 本身是 `<a>`，或者其父级是 `<a>`。
+   你需要根据实际HTML确定。但通常年份标题不是链接。
+   如果像你之前截图的“2021”是 `h2` 标签，它已经受到 `button, body, h1-h6 { color: var(--primary); }` 的影响了。
+   但如果是 `<h2><a href="#">2021</a></h2>`，那这条规则就会生效。
+*/
+
+
+/* 针对存档页面中的月份链接（例如“April”）*/
+.archive-month a {
+    color: var(--primary); /* 将月份链接的文本颜色设置为 --primary */
+}
+
+/* 针对存档列表中的文章标题链接 */
+.archive-entry-title a {
+    color: var(--primary); /* 将文章标题链接的文本颜色设置为 --primary */
+}
+
 .archive-month-header {
     margin: var(--homesize) 0;
     width: 150px;
