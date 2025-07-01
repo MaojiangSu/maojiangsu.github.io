@@ -59,9 +59,9 @@ params:
 My research focuses on the statistical theory of foundation models, in-context learning, and the computational limits of transformers.
 I'm fortunate to be joining the MAGICS Lab, where I’ll be advised by Prof. Han Liu.
 
-          imageUrl: "picture.jpeg"
-          imageWidth: 160
-          imageHeight: 160
+          imageUrl: "MeInDesert.jpg"
+          imageWidth: 200
+          imageHeight: 200
           buttons:
             - name: Papers
               url: papers/
@@ -82,25 +82,23 @@ I'm fortunate to be joining the MAGICS Lab, where I’ll be advised by Prof. Han
         - name: CV
           url: cv.pdf
         - name: Email
-          url: mailto:igelfeld@regensburg.edu
+          url: maojiangsu2030@northwestern.edu
         - name: Zoom
-          url: https://www.zoom.us/my/igelfeld
+          url: https://northwestern.zoom.us/j/6221766819
         - name: Location
           url: location/
-        - name: Office Hours
-          url: officehours/
         - name: Google Scholar
-          url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
+          url: https://scholar.google.com/citations?user=y7QeN8UAAAAJ&hl=en
         - name: GitHub
           url: https://github.com/pmichaillat
-        - name: Substack
-          url: https://pmichaillat.substack.com
-        - name: YouTube
-          url: https://www.youtube.com/@pmichaillat
-        - name: Twitter
-          url: https://x.com/pmichaillat
-        - name: Bluesky
-          url: https://bsky.app/profile/pmichaillat.bsky.social
+        # - name: Substack
+        #   url: https://pmichaillat.substack.com
+        # - name: YouTube
+        #   url: https://www.youtube.com/@pmichaillat
+        # - name: Twitter
+        #   url: https://x.com/pmichaillat
+        # - name: Bluesky
+        #   url: https://bsky.app/profile/pmichaillat.bsky.social
 
     assets:
         disableScrollBarStyle: true
@@ -108,7 +106,7 @@ I'm fortunate to be joining the MAGICS Lab, where I’ll be advised by Prof. Han
         hiddenInList: false
         hiddenInSingle: true
     label:
-      text: "Moritz-Maria von Igelfeld"
+      text: "Maojiang Su"
       icon: favicon.ico
       iconHeight: 18
 
