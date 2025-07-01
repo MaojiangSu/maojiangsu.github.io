@@ -12,7 +12,7 @@ html {
 }
 
 a {
-    color:  var(--href-color); /* 例如：道奇蓝 */
+    color:  var(--href-color); 
 }
 
 button,
