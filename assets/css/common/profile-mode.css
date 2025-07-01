@@ -24,8 +24,9 @@
 
 /* 强制头像变成方形 */
 .profile img {
-    border-radius: 0 !important;
+  border-radius: 12px !important;  /* 👈 适中的圆角 */
 }
+
 
 .buttons {
     flex-wrap: wrap;
