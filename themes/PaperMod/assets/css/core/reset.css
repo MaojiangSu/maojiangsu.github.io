@@ -11,7 +11,10 @@ html {
     text-size-adjust: 100%;
 }
 
-a,
+a {
+    color:  var(--href-color); /* 例如：道奇蓝 */
+}
+
 button,
 body,
 h1,
