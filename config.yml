@@ -61,8 +61,8 @@ params:
           I'm fortunate to be joining the MAGICS Lab, where I’ll be advised by Prof. Han Liu."
 
           imageUrl: "MeInDesert.jpg"
-          imageWidth: 250
-          imageHeight: 200
+          imageWidth: 320
+          imageHeight: 240
           buttons:
             - name: Papers
               url: papers/
