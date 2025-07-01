@@ -22,9 +22,9 @@
     font-size: 2.5rem;
 }
 
+/* 强制头像变成方形 */
 .profile img {
-    border-radius: 50%;
-    border: 1px solid var(--tertiary);
+    border-radius: 0 !important;
 }
 
 .buttons {
