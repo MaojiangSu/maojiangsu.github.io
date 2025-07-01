@@ -65,6 +65,7 @@ body:not(.dark) #sun {
 #menu a {
     font-size: var(--headersize);
     font-weight: 400;
+    color: var(--primary); /* <<<<<< 添加这一行，让菜单链接文本使用 --primary */
 }
 
 #menu .active {
@@ -87,6 +88,7 @@ body:not(.dark) #sun {
     margin: auto 3px;
     font-size: 16px;
     font-weight: 500;
+    color: var(--primary); /* <<<<<< 添加这一行，让语言切换链接文本使用 --primary */
 }
 
 .logo-switches {
