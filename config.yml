@@ -59,14 +59,14 @@ params:
           enabled: true
           title: Maojiang Su
           subtitle: |
-  Hi, I'm Maojiang Su — an incoming PhD student in Computer Science at Northwestern University.
-  My research focuses on the statistical theory of foundation models, in-context learning, and the computational limits of transformers.
-  I'm fortunate to be joining the <a href="https://magics-lab-website-cvm9.vercel.app/">MAGICS Lab</a>, where I’ll be advised by <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/liu-han.html">Prof. Han Liu</a>.
+            Hi, I'm Maojiang Su — an incoming PhD student in Computer Science at Northwestern University.
+            My research focuses on the statistical theory of foundation models, in-context learning, and the computational limits of transformers.
+            I'm fortunate to be joining the <a href="https://magics-lab-website-cvm9.vercel.app/">MAGICS Lab</a>, where I’ll be advised by <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/liu-han.html">Prof. Han Liu</a>.
 
-  Prior to Northwestern, I received my B.S. from the University of Science and Technology of China (USTC) in June 2025.
+            Prior to Northwestern, I received my B.S. from the University of Science and Technology of China (USTC) in June 2025.
 
-  I warmly welcome discussions on anything interesting about AI — whether it's cutting-edge applications or deep theoretical insights.
-  You can find updates about my recent activities in the <a href="/archive">News</a> section.
+            I warmly welcome discussions on anything interesting about AI — whether it's cutting-edge applications or deep theoretical insights.
+            You can find updates about my recent activities in the <a href="/archive">News</a> section.
 
 
           imageUrl: "MeInDesert.jpg"
