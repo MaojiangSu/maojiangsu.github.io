@@ -25,6 +25,7 @@
 .logo a {
     font-size: var(--headersize);
     font-weight: var(--semibold);
+    color: var(--primary); /* << 确保这一行在这里 */
 }
 
 .logo a img, .logo a svg {
