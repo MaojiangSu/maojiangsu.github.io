@@ -55,9 +55,9 @@ params:
     profileMode:
           enabled: true
           title: Maojiang Su
-          subtitle: Hi, I'm Maojiang Su — an incoming PhD student in Computer Science at Northwestern University.
-My research focuses on the statistical theory of foundation models, in-context learning, and the computational limits of transformers.
-I'm fortunate to be joining the MAGICS Lab, where I’ll be advised by Prof. Han Liu.
+          subtitle: "Hi, I'm Maojiang Su — an incoming PhD student in Computer Science at Northwestern University.
+          My research focuses on the statistical theory of foundation models, in-context learning, and the computational limits of transformers.
+          I'm fortunate to be joining the MAGICS Lab, where I’ll be advised by Prof. Han Liu."
 
           imageUrl: "MeInDesert.jpg"
           imageWidth: 200
