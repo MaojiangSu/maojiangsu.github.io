@@ -20,7 +20,7 @@ menu: # This part will be visible if we click the papers or news.
           weight: 2
         - name: News
           url: archive/
-           weight: 7
+          weight: 7
         # - name: Courses
         #   url: courses/
         #   weight: 3
