@@ -11,7 +11,7 @@ cover:
     relative: true
 editPost:
     URL: "https://arxiv.org/abs/2406.03136"
-    Text: "The International Conference on Learning Representations"
+    Text: "The International Conference on Learning Representations 2025"
 
 ---
 
