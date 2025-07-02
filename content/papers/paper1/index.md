@@ -10,7 +10,7 @@ cover:
     alt: "Computational limits of low-rank adaptation (lora) for transformer-based models"
     relative: true
 editPost:
-    URL: "https://github.com/pmichaillat/hugo-website"
+    URL: "[https://github.com/pmichaillat/hugo-website](https://arxiv.org/abs/2406.03136)"
     Text: "The International Conference on Learning Representations"
 
 ---
@@ -29,6 +29,6 @@ We study the computational limits of Low-Rank Adaptation (LoRA) update for finet
 
 ---
 
-##### Figure 6: Computational limits of low-rank adaptation (lora) for transformer-based models
+##### Figure: Computational limits of low-rank adaptation (lora) for transformer-based models
 
 ![](paper1.png)
