@@ -7,7 +7,7 @@ description: "We study the computational limits of Low-Rank Adaptation (LoRA) up
 summary: "We study the computational limits of Low-Rank Adaptation (LoRA) update for finetuning transformer-based models using fine-grained complexity theory. " 
 cover:
     image: "paper1.png"
-    alt: "Some Uses For Olive Oil"
+    alt: "Computational limits of low-rank adaptation (lora) for transformer-based models"
     relative: true
 editPost:
     URL: "https://github.com/pmichaillat/hugo-website"
