@@ -19,7 +19,7 @@ editPost:
 
 ##### Download
 
-+ [Paper](paper1.pdf)
++ [Paper](theory_of_lora_iclr_2025.pdf)
 
 ---
 
@@ -29,6 +29,6 @@ We study the computational limits of Low-Rank Adaptation (LoRA) update for finet
 
 ---
 
-##### Figure 6: Some Uses For Olive Oil
+##### Figure 6: Computational limits of low-rank adaptation (lora) for transformer-based models
 
 ![](paper1.png)
