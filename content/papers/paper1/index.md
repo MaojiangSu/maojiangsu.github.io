@@ -20,8 +20,6 @@ editPost:
 ##### Download
 
 + [Paper](paper1.pdf)
-+ [Online appendix](appendix1.pdf)
-+ [Code and data](https://github.com/pmichaillat/feru)
 
 ---
 
