@@ -10,7 +10,7 @@ cover:
     alt: "Computational limits of low-rank adaptation (lora) for transformer-based models"
     relative: true
 editPost:
-    URL: "[https://github.com/pmichaillat/hugo-website](https://arxiv.org/abs/2406.03136)"
+    URL: "https://arxiv.org/abs/2406.03136"
     Text: "The International Conference on Learning Representations"
 
 ---
