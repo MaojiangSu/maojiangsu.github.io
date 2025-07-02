@@ -89,10 +89,10 @@ params:
             #   url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
 
     socialIcons:
-        - name: CV
-          url: cv.pdf
+        # - name: CV
+        #   url: cv.pdf
         - name: Email
-          url: maojiangsu2030@northwestern.edu
+          url: maojiangsu2030@u.northwestern.edu
         - name: Zoom
           url: https://northwestern.zoom.us/j/6221766819
         # - name: Location
