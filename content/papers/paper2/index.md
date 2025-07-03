@@ -2,24 +2,23 @@
 title: "Transformers are Deep Optimizers: Provable In-Context Learning for DeepModel Training"
 date: 2025-07-13
 tags: ["Transformers", "Deep Learning", "In-Context Learning", "Optimization"]
-author:
-  ["Weimin Wu", "Maojiang Su", "Jerry Yao-Chieh Hu", " Zhao Song", "Han Liu"]
+author: ["Weimin Wu", "Maojiang Su", "Jerry Yao-Chieh Hu", " Zhao Song", "Han Liu"]
 description: "This paper investigates the transformer's capability for in-context learning (ICL) to simulate the training process of deep models, providing a provable explicit construction. Published in The International Conference on Machine Learning, 2025."
 summary: "This paper investigates the transformer's capability for in-context learning (ICL) to simulate the training process of deep models, providing a provable explicit construction."
 cover:
-  image: "icl_deep_icml2025_poster.png"
-  alt: "Transformers are Deep Optimizers"
-  relative: true
+    image: "icl_deep_icml2025_poster.png"
+    alt: "Transformers are Deep Optimizers"
+    relative: true
 editPost:
-  URL: "https://github.com/pmichaillat/hugo-website"
-  Text: "Published in The International Conference on Machine Learning, 2025."
+    URL: "https://github.com/pmichaillat/hugo-website"
+    Text: "Published in The International Conference on Machine Learning, 2025."
 ---
 
 ---
 
 ##### Download
 
-- [Paper](6952_Transformers_are_Deep_Opt.pdf)
++ [Paper](6952_Transformers_are_Deep_Opt.pdf)
 
 ---
 
