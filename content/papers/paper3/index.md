@@ -17,7 +17,7 @@ author:
 description: "This paper proposes GERM, an efficient genomic foundation model leveraging outlier removal techniques for low-cost fine-tuning and robust quantization. Published in the 42nd International Conference on Machine Learning (ICML), 2025."
 summary: "GERM removes outliers to improve genomic model efficiency, enabling quantization and LoRA fine-tuning with minimal degradation."
 cover:
-  image: "germ_icml2025_poster.png"
+  image: "_GERM__2025ICML_poster.png"
   alt: "GERM: Fast and Low-Cost Genomic Foundation Models"
   relative: true
 editPost:
@@ -39,4 +39,4 @@ To address the challenge of scarce computational resources in genomic modeling, 
 
 ##### Figure
 
-![](germ_icml2025_poster.png)
+![](_GERM__2025ICML_poster.png)
