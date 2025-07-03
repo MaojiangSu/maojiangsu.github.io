@@ -12,9 +12,9 @@ taxonomies:
     
 menu: # This part will be visible if we click the papers or news.
     main:
-        - name: Books
-          url: books/
-          weight: 5 
+        # - name: Books
+        #   url: books/
+        #   weight: 5 
         - name: Papers
           url: papers/
           weight: 2
