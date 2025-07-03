@@ -1,6 +1,6 @@
 ---
 title: "Transformers are Deep Optimizers: Provable In-Context Learning for DeepModel Training"
-date: 2025-7-13
+date: 2025-07-13
 tags: ["Transformers", "Deep Learning", "In-Context Learning", "Optimization"]
 author: ["Florianus Prinzel", "Moritz-Maria von Igelfeld"]
 description: "This paper investigates the transformer's capability for in-context learning (ICL) to simulate the training process of deep models, providing a provable explicit construction. Published in The International Conference on Machine Learning, 2025."
