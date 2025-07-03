@@ -27,7 +27,7 @@ editPost:
 
 ##### Download
 
-- [Paper (PDF)](Fast%20and%20Low-Cost%20Genomic%20Foundation%20Models%20via%20Outlier%20Removal.pdf)
+- [Paper (PDF)](832_Fast_and_Low_Cost_Genomic_.pdf)
 
 ---
 
