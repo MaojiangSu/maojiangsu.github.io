@@ -18,7 +18,7 @@ editPost:
 
 ##### Download
 
-- [Paper](6952_Transformers_are_Deep_Opt.pdf)
++ [Paper](6952_Transformers_are_Deep_Opt.pdf)
 
 ---
 
