@@ -5,7 +5,7 @@ tags: ["Flow Matching","Transformers","Statistical Rates","High-Order Dynamics"]
 author: ["Maojiang Su","Jerry Yao-Chieh Hu","Yi-Chen Lee","Ning Zhu","Jui-Hui Chung","Shang Wu","Zhao Song","Minshuo Chen","Han Liu"]
 description: "We present a unified framework for standard and high-order flow matching that incorporates trajectory derivatives up to an arbitrary order $K$. Our key innovation is establishing the marginalization technique that converts the intractable $K$-order loss into a simple conditional regression with exact gradients and identifying the consistency constraint. We establish sharp statistical rates of the $K$-order flow matching implemented with transformer networks. " 
 cover:
-    image: "paper4.jpeg"
+    image: "high_order_FM_ver_prelim.pdf"
     alt: "High-Order Flow Matching: Unified Framework and Sharp Statistical Rates"
     relative: true
 editPost:
