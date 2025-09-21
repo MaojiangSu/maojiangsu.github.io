@@ -6,64 +6,67 @@
 <html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}">
 
 <head>
-  {{- partial "head.html" . }}
+    {{- partial "head.html" . }}
 
-  {{ if .IsPage }}
-    <!-- Google Scholar Metadata (safe version, no kindIs) -->
-    <meta name="citation_title" content="{{ .Title | html }}">
+    {{ if .IsPage }}
+      <!-- Google Scholar / Highwire metadata (safe, no .Authors/.Author) -->
 
-    {{/* authors: author / authors / .Authors / .Author，统一成列表后遍历 */}}
-    {{ $rawAuthors := or .Params.author (or .Params.authors (or .Authors .Author)) }}
-    {{ if $rawAuthors }}
-      {{ $list := cond (reflect.IsSlice $rawAuthors) $rawAuthors (slice $rawAuthors) }}
-      {{ range $list }}
-        {{ if (reflect.IsMap .) }}
-          {{ with .name }}<meta name="citation_author" content="{{ . | html }}">{{ end }}
-          {{ with .Name }}<meta name="citation_author" content="{{ . | html }}">{{ end }}
-        {{ else }}
-          <meta name="citation_author" content="{{ . | html }}">
+      <!-- Title -->
+      <meta name="citation_title" content="{{ .Title | html }}">
+
+      <!-- Authors: try author/authors via .Param; normalize to slice -->
+      {{ $rawAuthors := or (.Param "author") (.Param "authors") }}
+      {{ if $rawAuthors }}
+        {{ $authors := cond (reflect.IsSlice $rawAuthors) $rawAuthors (slice $rawAuthors) }}
+        {{ range $authors }}
+          {{ if (reflect.IsMap .) }}
+            {{ with .name }}<meta name="citation_author" content="{{ . | html }}">{{ end }}
+            {{ with .Name }}<meta name="citation_author" content="{{ . | html }}">{{ end }}
+          {{ else }}
+            <meta name="citation_author" content="{{ . | html }}">
+          {{ end }}
         {{ end }}
       {{ end }}
-    {{ end }}
 
-    {{ with or .PublishDate .Date .Params.date }}
-      <meta name="citation_publication_date" content="{{ .Format "2006/01/02" }}">
-    {{ end }}
-
-    {{ if .Params.conference }}
-      <meta name="citation_conference_title" content="{{ .Params.conference | html }}">
-    {{ else if .Params.journal }}
-      <meta name="citation_journal_title" content="{{ .Params.journal | html }}">
-    {{ else if .Params.booktitle }}
-      <meta name="citation_conference_title" content="{{ .Params.booktitle | html }}">
-    {{ else }}
-      {{ with .Params.editPost }}
-        {{ with .Text }}<meta name="citation_conference_title" content="{{ . | html }}">{{ end }}
+      <!-- Publication date: PublishDate -> Date -> Param "date" -->
+      {{ $pdate := or .PublishDate (or .Date (.Param "date")) }}
+      {{ with $pdate }}
+        <meta name="citation_publication_date" content="{{ .Format "2006/01/02" }}">
       {{ end }}
-    {{ end }}
 
-    {{ if .Params.pdf }}
-      <meta name="citation_pdf_url" content="{{ .Params.pdf }}">
-    {{ else if .Params.pdf_url }}
-      <meta name="citation_pdf_url" content="{{ .Params.pdf_url }}">
-    {{ else if .Params.pdf_file }}
-      <meta name="citation_pdf_url" content="{{ printf "%s%s" site.BaseURL .Params.pdf_file }}">
-    {{ else if .Params.paper }}
-      <meta name="citation_pdf_url" content="{{ .Params.paper }}">
-    {{ else }}
-      {{ with .Resources.GetMatch "**/*.pdf" }}
-        <meta name="citation_pdf_url" content="{{ .Permalink }}">
+      <!-- Venue: conference / journal / booktitle / editPost.Text -->
+      {{ if (.Param "conference") }}
+        <meta name="citation_conference_title" content="{{ (.Param "conference") | html }}">
+      {{ else if (.Param "journal") }}
+        <meta name="citation_journal_title" content="{{ (.Param "journal") | html }}">
+      {{ else if (.Param "booktitle") }}
+        <meta name="citation_conference_title" content="{{ (.Param "booktitle") | html }}">
+      {{ else }}
+        {{ with (.Param "editPost") }}
+          {{ with .Text }}<meta name="citation_conference_title" content="{{ . | html }}">{{ end }}
+        {{ end }}
       {{ end }}
-    {{ end }}
 
-    {{ with .Params.doi }}<meta name="citation_doi" content="{{ . }}">{{ end }}
-    {{ with (or .Params.arxiv .Params.arXiv) }}<meta name="citation_arxiv" content="{{ . }}">{{ end }}
-  {{ end }}
+      <!-- PDF URL: pdf -> pdf_url -> pdf_file -> paper -> page resource -->
+      {{ if (.Param "pdf") }}
+        <meta name="citation_pdf_url" content="{{ (.Param "pdf") }}">
+      {{ else if (.Param "pdf_url") }}
+        <meta name="citation_pdf_url" content="{{ (.Param "pdf_url") }}">
+      {{ else if (.Param "pdf_file") }}
+        <meta name="citation_pdf_url" content="{{ printf "%s%s" site.BaseURL (.Param "pdf_file") }}">
+      {{ else if (.Param "paper") }}
+        <meta name="citation_pdf_url" content="{{ (.Param "paper") }}">
+      {{ else }}
+        {{ with .Resources.GetMatch "**/*.pdf" }}
+          <meta name="citation_pdf_url" content="{{ .Permalink }}">
+        {{ end }}
+      {{ end }}
+
+      <!-- Optional IDs -->
+      {{ with (.Param "doi") }}<meta name="citation_doi" content="{{ . }}">{{ end }}
+      {{ with (or (.Param "arxiv") (.Param "arXiv")) }}<meta name="citation_arxiv" content="{{ . }}">{{ end }}
+    {{ end }}
 </head>
-
-
-
-
 
 <body class="
 {{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
