@@ -9,7 +9,6 @@ cover:
     alt: "High-Order Flow Matching: Unified Framework and Sharp Statistical Rates"
     relative: true
 editPost:
-    URL: "https://arxiv.org/abs/2406.03136"
     Text: "Neural Information Processing Systems 2025"
 
 ---
