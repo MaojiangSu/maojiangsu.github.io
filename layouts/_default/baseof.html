@@ -22,13 +22,14 @@
       {{ with .Params.conference }}
         <meta name="citation_conference_title" content="{{ . }}">
       {{ end }}
-      {{ with .Params.pdf }}
-        <meta name="citation_pdf_url" content="{{ . }}">
+      {{ if .Params.pdf }}
+        <meta name="citation_pdf_url" content="{{ .Params.pdf }}">
       {{ else if .Params.pdf_file }}
-        <meta name="citation_pdf_url" content="{{ printf "%s/%s" site.BaseURL .Params.pdf_file }}">
+        <meta name="citation_pdf_url" content="{{ site.BaseURL }}{{ .Params.pdf_file }}">
       {{ end }}
     {{ end }}
 </head>
+
 
 <body class="
 {{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
