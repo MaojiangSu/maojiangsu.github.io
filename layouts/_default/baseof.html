@@ -7,6 +7,27 @@
 
 <head>
     {{- partial "head.html" . }}
+
+    {{ if .IsPage }}
+      <!-- Google Scholar Metadata -->
+      <meta name="citation_title" content="{{ .Title }}">
+      {{ with .Params.author }}
+        {{ range . }}
+          <meta name="citation_author" content="{{ . }}">
+        {{ end }}
+      {{ end }}
+      {{ with .Date }}
+        <meta name="citation_publication_date" content="{{ .Format "2006/01/02" }}">
+      {{ end }}
+      {{ with .Params.conference }}
+        <meta name="citation_conference_title" content="{{ . }}">
+      {{ end }}
+      {{ with .Params.pdf }}
+        <meta name="citation_pdf_url" content="{{ . }}">
+      {{ else if .Params.pdf_file }}
+        <meta name="citation_pdf_url" content="{{ printf "%s/%s" site.BaseURL .Params.pdf_file }}">
+      {{ end }}
+    {{ end }}
 </head>
 
 <body class="
