@@ -1,0 +1,318 @@
+version: 1
+source:
+  provider: google_scholar
+  user_id: y7QeN8UAAAAJ
+  profile_url: https://scholar.google.com/citations?user=y7QeN8UAAAAJ&hl=en&pagesize=100
+publications:
+- slug: scholar-ulom3-a8wrac
+  title: Discrete flow matching policy optimization
+  date: '2026-01-01'
+  year: 2026
+  venue: arXiv preprint arXiv:2604.06491, 2026
+  tags:
+  - Publication
+  authors:
+  - M Su
+  - PC Hsieh
+  - W Wu
+  - M Lu
+  - J Chen
+  - JYC Hu
+  - H Liu
+  description: arXiv preprint arXiv:2604.06491, 2026.
+  summary: arXiv preprint arXiv:2604.06491, 2026.
+  edit_post:
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:ULOm3_A8WrAC
+    text: Google Scholar
+  scholar:
+    id: y7QeN8UAAAAJ:ULOm3_A8WrAC
+    user_id: y7QeN8UAAAAJ
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:ULOm3_A8WrAC
+- slug: scholar-yowf2qjgphmc
+  title: In-Context Universal Approximation, Compositional Generalization, and Algorithm Emulation
+  date: '2026-01-01'
+  year: 2026
+  venue: International Conference on Machine Learning (ICML) 2026, 2026
+  tags:
+  - Publication
+  authors:
+  - JYC Hu
+  - HY Chen
+  - PC Lin
+  - M Su
+  - H Liu
+  description: International Conference on Machine Learning (ICML) 2026, 2026.
+  summary: International Conference on Machine Learning (ICML) 2026, 2026.
+  edit_post:
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:YOwf2qJgpHMC
+    text: Google Scholar
+  scholar:
+    id: y7QeN8UAAAAJ:YOwf2qJgpHMC
+    user_id: y7QeN8UAAAAJ
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:YOwf2qJgpHMC
+- slug: scholar-kc-bzdyksqc
+  title: Learning Manifold Data with Flow Matching
+  date: '2026-01-01'
+  year: 2026
+  venue: International Conference on Machine Learning (ICML) 2026, 2026
+  tags:
+  - Publication
+  authors:
+  - S Pi
+  - M Lu
+  - JYC Hu
+  - M Su
+  - W Wu
+  - H Liu
+  description: International Conference on Machine Learning (ICML) 2026, 2026.
+  summary: International Conference on Machine Learning (ICML) 2026, 2026.
+  edit_post:
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:_kc_bZDykSQC
+    text: Google Scholar
+  scholar:
+    id: y7QeN8UAAAAJ:_kc_bZDykSQC
+    user_id: y7QeN8UAAAAJ
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:_kc_bZDykSQC
+- slug: scholar-4topqqg69kyc
+  title: 'MagicSim: A Unified Infrastructure for Executable Embodied Interaction'
+  date: '2026-01-01'
+  year: 2026
+  venue: arXiv preprint arXiv:2606.17511, 2026
+  tags:
+  - Publication
+  authors:
+  - H Lu
+  - S Liu
+  - Y Chen
+  - G Ye
+  - M Shen
+  - S Yu
+  - Y Xiao
+  - J Zhao
+  - S Wu
+  - J Zhang
+  - Maojiang Su
+  description: arXiv preprint arXiv:2606.17511, 2026.
+  summary: arXiv preprint arXiv:2606.17511, 2026.
+  edit_post:
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:4TOpqqG69KYC
+    text: Google Scholar
+  scholar:
+    id: y7QeN8UAAAAJ:4TOpqqG69KYC
+    user_id: y7QeN8UAAAAJ
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:4TOpqqG69KYC
+- slug: scholar-klatu1dfn6uc
+  title: 'Phys4D: Fine-Grained Physics-Consistent 4D Modeling from Video Diffusion'
+  date: '2026-01-01'
+  year: 2026
+  venue: arXiv preprint arXiv:2603.03485, 2026
+  tags:
+  - Publication
+  authors:
+  - H Lu
+  - S Wu
+  - J Zhang
+  - M Su
+  - G Ye
+  - C Xu
+  - L Lu
+  - P Maneriker
+  - F Du
+  - M Li
+  description: arXiv preprint arXiv:2603.03485, 2026.
+  summary: arXiv preprint arXiv:2603.03485, 2026.
+  edit_post:
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:KlAtU1dfN6UC
+    text: Google Scholar
+  scholar:
+    id: y7QeN8UAAAAJ:KlAtU1dfN6UC
+    user_id: y7QeN8UAAAAJ
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:KlAtU1dfN6UC
+- slug: scholar-zph67rfs4hoc
+  title: 'SPARQ: Outlier-free SpeechLM with Fast Adaptation and Robust Quantization'
+  date: '2026-01-01'
+  year: 2026
+  venue: ''
+  tags:
+  - Publication
+  authors:
+  - S Wu
+  - YJ Lu
+  - H Luo
+  - M Su
+  - JYC Hu
+  - J Wang
+  - J Liu
+  - N Dehak
+  - J Villalba
+  description: Listed on Google Scholar in 2026.
+  summary: Listed on Google Scholar in 2026.
+  edit_post:
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:Zph67rFs4hoC
+    text: Google Scholar
+  scholar:
+    id: y7QeN8UAAAAJ:Zph67rFs4hoC
+    user_id: y7QeN8UAAAAJ
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:Zph67rFs4hoC
+- slug: scholar-lkgwnxomwfcc
+  title: A theoretical analysis of discrete flow matching generative models
+  date: '2025-01-01'
+  year: 2025
+  venue: arXiv preprint arXiv:2509.22623, 2025
+  tags:
+  - Publication
+  authors:
+  - M Su
+  - M Lu
+  - JYC Hu
+  - S Wu
+  - Z Song
+  - A Reneau
+  - H Liu
+  description: arXiv preprint arXiv:2509.22623, 2025.
+  summary: arXiv preprint arXiv:2509.22623, 2025.
+  edit_post:
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:LkGwnXOMwfcC
+    text: Google Scholar
+  scholar:
+    id: y7QeN8UAAAAJ:LkGwnXOMwfcC
+    user_id: y7QeN8UAAAAJ
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:LkGwnXOMwfcC
+- slug: scholar-tyk-4ss8fvuc
+  title: Fast and Low-Cost Genomic Foundation Models via Outlier Removal
+  date: '2025-01-01'
+  year: 2025
+  venue: International Conference on Machine Learning (ICML) 2025, 2025
+  tags:
+  - Publication
+  authors:
+  - H Luo
+  - C Qiu
+  - M Su
+  - Z Zhou
+  - Z Mehta
+  - G Ye
+  - JYC Hu
+  - H Liu
+  description: International Conference on Machine Learning (ICML) 2025, 2025.
+  summary: International Conference on Machine Learning (ICML) 2025, 2025.
+  edit_post:
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:Tyk-4Ss8FVUC
+    text: Google Scholar
+  scholar:
+    id: y7QeN8UAAAAJ:Tyk-4Ss8FVUC
+    user_id: y7QeN8UAAAAJ
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:Tyk-4Ss8FVUC
+- slug: scholar-rolk4nbrz8uc
+  title: 'High-order flow matching: Unified framework and sharp statistical rates'
+  date: '2025-01-01'
+  year: 2025
+  venue: Neural Information Processing Systems (NeurIPS) 2025, 2025
+  tags:
+  - Publication
+  authors:
+  - M Su
+  - JYC Hu
+  - YC Lee
+  - N Zhu
+  - JH Chung
+  - S Wu
+  - Z Song
+  - M Chen
+  - H Liu
+  description: Neural Information Processing Systems (NeurIPS) 2025, 2025.
+  summary: Neural Information Processing Systems (NeurIPS) 2025, 2025.
+  edit_post:
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:roLk4NBRz8UC
+    text: Google Scholar
+  scholar:
+    id: y7QeN8UAAAAJ:roLk4NBRz8UC
+    user_id: y7QeN8UAAAAJ
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:roLk4NBRz8UC
+- slug: scholar-eqolee2rzwmc
+  title: Minimalist Softmax Attention Provably Learns Constrained Boolean Functions
+  date: '2025-01-01'
+  year: 2025
+  venue: arXiv preprint arXiv:2505.19531, 2025
+  tags:
+  - Publication
+  authors:
+  - JYC Hu
+  - X Zhang
+  - M Su
+  - Z Song
+  - H Liu
+  description: arXiv preprint arXiv:2505.19531, 2025.
+  summary: arXiv preprint arXiv:2505.19531, 2025.
+  edit_post:
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:eQOLeE2rZwMC
+    text: Google Scholar
+  scholar:
+    id: y7QeN8UAAAAJ:eQOLeE2rZwMC
+    user_id: y7QeN8UAAAAJ
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:eQOLeE2rZwMC
+- slug: scholar-0enyyjriufmc
+  title: On Flow Matching KL Divergence
+  date: '2025-01-01'
+  year: 2025
+  venue: arXiv preprint arXiv:2511.05480, 2025
+  tags:
+  - Publication
+  authors:
+  - M Su
+  - JYC Hu
+  - S Pi
+  - H Liu
+  description: arXiv preprint arXiv:2511.05480, 2025.
+  summary: arXiv preprint arXiv:2511.05480, 2025.
+  edit_post:
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:0EnyYjriUFMC
+    text: Google Scholar
+  scholar:
+    id: y7QeN8UAAAAJ:0EnyYjriUFMC
+    user_id: y7QeN8UAAAAJ
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:0EnyYjriUFMC
+- slug: scholar-u5hhmvd-uo8c
+  title: Computational limits of low-rank adaptation (lora) for transformer-based models
+  date: '2024-01-01'
+  year: 2024
+  venue: International Conference on Learning Representations (ICLR) 2025, 2024
+  tags:
+  - Publication
+  authors:
+  - JYC Hu
+  - M Su
+  - EJ Kuo
+  - Z Song
+  - H Liu
+  description: International Conference on Learning Representations (ICLR) 2025, 2024.
+  summary: International Conference on Learning Representations (ICLR) 2025, 2024.
+  edit_post:
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:u5HHmVD_uO8C
+    text: Google Scholar
+  scholar:
+    id: y7QeN8UAAAAJ:u5HHmVD_uO8C
+    user_id: y7QeN8UAAAAJ
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:u5HHmVD_uO8C
+- slug: scholar-2osognq5qmec
+  title: In-Context Deep Learning via Transformer Models
+  date: '2024-01-01'
+  year: 2024
+  venue: International Conference on Machine Learning (ICML) 2025, 2024
+  tags:
+  - Publication
+  authors:
+  - W Wu
+  - M Su
+  - JYC Hu
+  - Z Song
+  - H Liu
+  description: International Conference on Machine Learning (ICML) 2025, 2024.
+  summary: International Conference on Machine Learning (ICML) 2025, 2024.
+  edit_post:
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:2osOgNQ5qMEC
+    text: Google Scholar
+  scholar:
+    id: y7QeN8UAAAAJ:2osOgNQ5qMEC
+    user_id: y7QeN8UAAAAJ
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:2osOgNQ5qMEC

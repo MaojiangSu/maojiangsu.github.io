@@ -43,6 +43,16 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+      - name: Install publication generator dependencies
+        run: python -m pip install -r scripts/requirements.txt
+      - name: Render publication pages
+        run: python scripts/render_papers.py
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5

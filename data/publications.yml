@@ -1,0 +1,196 @@
+version: 1
+
+sources:
+  google_scholar:
+    user_id: y7QeN8UAAAAJ
+    author_name: Maojiang Su
+    max_results: 100
+
+publications:
+  - slug: paper1
+    title: "Computational limits of low-rank adaptation (lora) for transformer-based models"
+    aliases:
+      - "Computational Limits of Low-Rank Adaptation (LoRA) Fine-Tuning for Transformer Models"
+    date: "2025-04-24"
+    venue: "The International Conference on Learning Representations 2025"
+    tags:
+      - Fine-grained Complexity Theory
+      - Transformers
+      - Low-rank Adaptation
+      - Computational Limits
+    authors:
+      - Jerry Yao-Chieh Hu
+      - Maojiang Su
+      - En-Jui Kuo
+      - Zhao Song
+      - Han Liu
+    description: >-
+      We study the computational limits of Low-Rank Adaptation (LoRA) update for finetuning
+      transformer-based models using fine-grained complexity theory. Published in The
+      International Conference on Learning Representations, 2025.
+    summary: >-
+      We study the computational limits of Low-Rank Adaptation (LoRA) update for finetuning
+      transformer-based models using fine-grained complexity theory.
+    cover:
+      image: paper1.png
+      alt: "Computational limits of low-rank adaptation (lora) for transformer-based models"
+    edit_post:
+      url: "https://arxiv.org/abs/2406.03136"
+      text: "The International Conference on Learning Representations 2025"
+    downloads:
+      - label: Paper
+        file: theory_of_lora_iclr_2025.pdf
+    abstract: >-
+      We study the computational limits of Low-Rank Adaptation (LoRA) update for finetuning
+      transformer-based models using fine-grained complexity theory. Our key observation is that
+      the existence of low-rank decompositions within the gradient computation of LoRA adaptation
+      leads to possible algorithmic speedup. This allows us to (i) identify a phase transition
+      behavior and (ii) prove the existence of nearly linear algorithms by controlling the LoRA
+      update computation term by term, assuming the Strong Exponential Time Hypothesis (SETH).
+    figure:
+      title: "Figure: Computational limits of low-rank adaptation (lora) for transformer-based models"
+      image: paper1.png
+
+  - slug: paper2
+    title: "Transformers are Deep Optimizers: Provable In-Context Learning for DeepModel Training"
+    aliases:
+      - "In-Context Deep Learning via Transformer Models"
+    date: "2025-05-14"
+    venue: "The International Conference on Machine Learning 2025"
+    tags:
+      - Transformers
+      - Deep Learning
+      - In-Context Learning
+      - Optimization
+    authors:
+      - Weimin Wu
+      - Maojiang Su
+      - Jerry Yao-Chieh Hu
+      - Zhao Song
+      - Han Liu
+    description: >-
+      This paper investigates the transformer's capability for in-context learning (ICL) to
+      simulate the training process of deep models, providing a provable explicit construction.
+      Published in The International Conference on Machine Learning, 2025.
+    summary: >-
+      This paper investigates the transformer's capability for in-context learning (ICL) to
+      simulate the training process of deep models, providing a provable explicit construction.
+    cover:
+      image: icl_deep_icml2025_poster.png
+      alt: "Transformers are Deep Optimizers"
+    edit_post:
+      text: "Published in The International Conference on Machine Learning, 2025."
+    downloads:
+      - label: Paper
+        file: 6952_In_Context_Deep_Learning_.pdf
+    abstract: >-
+      We investigate the transformer's capability for in-context learning (ICL) to simulate the
+      training process of deep models. Our key contribution is providing a positive example of
+      using a transformer to train a deep neural network by gradient descent in an implicit
+      fashion via ICL.
+    figure:
+      title: "Figure 1: Transformers are Deep Optimizers: Provable In-Context Learning for DeepModel Training"
+      image: icl_deep_icml2025_poster.png
+
+  - slug: paper3
+    title: "Fast and Low-Cost Genomic Foundation Models via Outlier Removal"
+    date: "2025-05-13"
+    venue: "The 42nd International Conference on Machine Learning 2025"
+    tags:
+      - Genomics
+      - Foundation Models
+      - Quantization
+      - LoRA
+      - Outlier Removal
+    authors:
+      - Haozheng Luo
+      - Chenghao Qiu
+      - Maojiang Su
+      - Zhihan Zhou
+      - Zoe Mehta
+      - Guo Ye
+      - Jerry Yao-Chieh Hu
+      - Han Liu
+    description: >-
+      This paper proposes GERM, an efficient genomic foundation model leveraging outlier removal
+      techniques for low-cost fine-tuning and robust quantization. Published in the 42nd
+      International Conference on Machine Learning (ICML), 2025.
+    summary: >-
+      GERM removes outliers to improve genomic model efficiency, enabling quantization and LoRA
+      fine-tuning with minimal degradation.
+    cover:
+      image: _GERM__2025ICML_poster.png
+      alt: "GERM: Fast and Low-Cost Genomic Foundation Models"
+    edit_post:
+      url: "https://github.com/MAGICS-LAB/GERM"
+      text: "Published in the 42nd International Conference on Machine Learning (ICML), 2025."
+    downloads:
+      - label: Paper (PDF)
+        file: 832_Fast_and_Low_Cost_Genomic_.pdf
+    abstract: >-
+      To address the challenge of scarce computational resources in genomic modeling, this paper
+      introduces **GERM**, a genomic foundation model with strong compression performance and fast
+      adaptability. GERM eliminates outliers during both pretraining and fine-tuning stages,
+      enhancing both LoRA-based low-rank adaptation and post-training quantization robustness.
+      Additionally, a continual learning variant named **GERM-T** further reduces retraining costs
+      by applying outlier removal in small steps. Compared to DNABERT-2, GERM improves fine-tuning
+      performance by **37.98%**, quantization robustness by **64.34%**, and reduces average kurtosis
+      by **92.14%**. These results demonstrate GERM's practical effectiveness for genomic tasks in
+      resource-constrained environments.
+    figure:
+      title: Figure
+      image: _GERM__2025ICML_poster.png
+
+  - slug: paper4
+    title: "High-Order Flow Matching: Unified Framework and Sharp Statistical Rates"
+    date: "2025-09-18"
+    venue: "Neural Information Processing Systems 2025"
+    tags:
+      - Flow Matching
+      - Transformers
+      - Statistical Rates
+      - High-Order Dynamics
+    authors:
+      - Maojiang Su
+      - Jerry Yao-Chieh Hu
+      - Yi-Chen Lee
+      - Ning Zhu
+      - Jui-Hui Chung
+      - Shang Wu
+      - Zhao Song
+      - Minshuo Chen
+      - Han Liu
+    description: >-
+      We present a unified framework for standard and high-order flow matching that incorporates
+      trajectory derivatives up to an arbitrary order $K$. Our key innovation is establishing the
+      marginalization technique that converts the intractable $K$-order loss into a simple
+      conditional regression with exact gradients and identifying the consistency constraint. We
+      establish sharp statistical rates of the $K$-order flow matching implemented with
+      transformer networks.
+    cover:
+      image: paper4.jpeg
+      alt: "High-Order Flow Matching: Unified Framework and Sharp Statistical Rates"
+    edit_post:
+      text: "Neural Information Processing Systems 2025"
+    extra_front_matter:
+      conference: "Neural Information Processing Systems (NeurIPS) 2025"
+      pdf: "https://maojiangsu.github.io/papers/paper4/high_order_FM_ver_prelim.pdf"
+      pdf_file: high_order_FM_ver_prelim.pdf
+    downloads:
+      - label: Paper
+        file: high_order_FM_ver_prelim.pdf
+    abstract: >-
+      Flow matching is an emerging generative modeling framework that learns continuous-time
+      dynamics to map noise into data. To enhance expressiveness and sampling efficiency, recent
+      works have explored incorporating high-order trajectory information. Despite the empirical
+      success, a holistic theoretical foundation is still lacking. We present a unified framework
+      for standard and high-order flow matching that incorporates trajectory derivatives up to an
+      arbitrary order $K$. Our key innovation is establishing the marginalization technique that
+      converts the intractable $K$-order loss into a simple conditional regression with exact
+      gradients and identifying the consistency constraint. We establish sharp statistical rates
+      of the $K$-order flow matching implemented with transformer networks. With $n$ samples, flow
+      matching estimates nonparametric distributions at a rate
+      $\tilde{O}(n^{-\Theta(1/d)})$, matching minimax lower bounds up to logarithmic factors.
+    figure:
+      title: "Figure: High-Order Flow Matching"
+      image: paper4.jpeg
