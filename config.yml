@@ -59,7 +59,7 @@ params:
           enabled: true
           title: Maojiang Su
           subtitle: |
-            Hi, I'm Maojiang Su — a <strong>first-year PhD student</strong> in Computer Science at <strong>Northwestern University</strong>.
+            Hi, I'm Maojiang Su — a <strong>second-year PhD student</strong> in Computer Science at <strong>Northwestern University</strong>.
             My research focuses on building AI systems that generalize across goals, constraints, and environments. I pursue two main directions: <strong>AI for science</strong> and <strong>embodied intelligence</strong>. In AI for science, I develop models for molecular and biological design under novel scientific objectives. In embodied intelligence, I study agents that act reliably across tasks and physical environments. My methodological interests include generative modeling, decision-making, reinforcement learning, and control. A central goal of my research is to translate pretrained knowledge into effective behavior guided by new objectives and feedback.
             I'm fortunate to join the <a href="https://magics-lab-website-cvm9.vercel.app/">MAGICS Lab</a>, where I am advised by <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/liu-han.html">Prof. Han Liu</a>. <br><br>
             
