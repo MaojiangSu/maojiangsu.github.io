@@ -90,8 +90,6 @@ params:
         #   url: cv.pdf
         - name: Email
           url: mailto:maojiangsu2030@u.northwestern.edu
-        - name: Zoom
-          url: https://northwestern.zoom.us/j/6221766819
         # - name: Location
         #   url: location/
         - name: Google Scholar
