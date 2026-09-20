@@ -15,7 +15,7 @@ menu: # This part will be visible if we click the papers or news.
         # - name: Books
         #   url: books/
         #   weight: 5 
-        - name: Papers
+        - name: Publications
           url: papers/
           weight: 2
         - name: News
@@ -70,7 +70,7 @@ params:
           imageWidth: 280
           imageHeight: 210
           buttons:
-            - name: Papers
+            - name: Publications
               url: papers/
             # - name: Data
             #   url: data/
