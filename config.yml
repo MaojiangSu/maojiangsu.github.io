@@ -59,10 +59,8 @@ params:
           enabled: true
           title: Maojiang Su
           subtitle: |
-            Hi, I'm Maojiang Su — a <strong>second-year PhD student</strong> in Computer Science at <strong>Northwestern University</strong>.
-            My research focuses on building AI systems that generalize across goals, constraints, and environments. I pursue two main directions: <strong>AI for Science</strong> and <strong>Embodied Intelligence</strong>. In AI for Science, I develop models for molecular and biological design under novel scientific objectives. In Embodied Intelligence, I study agents that act reliably across tasks and physical environments. My methodological interests include generative modeling, decision-making, reinforcement learning, and control. A central goal of my research is to translate pretrained knowledge into effective behavior guided by new objectives and feedback.
-            I'm fortunate to join the <a href="https://magics-lab-website-cvm9.vercel.app/">MAGICS Lab</a>, where I am advised by <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/liu-han.html">Prof. Han Liu</a>. <br><br>
-            
+            Hi, I'm Maojiang Su — a <strong>second-year PhD student</strong> in Computer Science at <strong>Northwestern University</strong>. I am advised by <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/liu-han.html">Prof. Han Liu</a> in the <a href="https://magics-lab-website-cvm9.vercel.app/">MAGICS Lab</a>. <br><br>
+            My research is in <strong>Machine Learning and Artificial Intelligence</strong>. I study how to build AI systems that generalize across goals, constraints, and environments. My work spans two complementary directions: <strong>AI for Science</strong> and <strong>Embodied Intelligence</strong>. In AI for Science, I develop generative models for molecular and biological design under novel scientific objectives. In Embodied Intelligence, I study agents that act reliably in new tasks and physical environments. My methodological interests include generative modeling, decision-making, reinforcement learning, and control. My long-term goal is to turn pretrained knowledge into useful behavior under new objectives and feedback. <br><br>
             You can find updates about my recent activities in the <a href="/news">News</a> section.
 
 
