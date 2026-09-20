@@ -1,19 +1,22 @@
 ---
 title: Learning Manifold Data with Flow Matching
-date: '2026-01-01'
+date: '2026-07-06'
 tags:
-- Publication
+- Flow Matching
+- Generative Modeling
+- Manifold Learning
 author:
-- S Pi
-- M Lu
-- JYC Hu
-- M Su
-- W Wu
-- H Liu
-description: International Conference on Machine Learning (ICML) 2026, 2026.
-summary: International Conference on Machine Learning (ICML) 2026, 2026.
+- Sophia Pi
+- Mingcheng Lu
+- Jerry Yao-Chieh Hu
+- Maojiang Su
+- Weimin Wu
+- Han Liu
+description: Accepted at the International Conference on Machine Learning (ICML), 2026.
+venue: International Conference on Machine Learning (ICML) 2026
+summary: Accepted at the International Conference on Machine Learning (ICML), 2026.
 editPost:
-  URL: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:_kc_bZDykSQC
+  URL: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=y7QeN8UAAAAJ&citation_for_view=y7QeN8UAAAAJ:_kc_bZDykSQC
   Text: Google Scholar
 ---
 

@@ -194,3 +194,44 @@ publications:
     figure:
       title: "Figure: High-Order Flow Matching"
       image: paper4.jpeg
+
+  - slug: scholar-yowf2qjgphmc
+    title: In-Context Universal Approximation, Compositional Generalization, and Algorithm Emulation
+    date: '2026-06-07'
+    venue: International Conference on Machine Learning (ICML) 2026
+    tags:
+      - Foundation Models
+      - In-Context Learning
+      - Generalization
+    authors:
+      - Jerry Yao-Chieh Hu
+      - Hong-Yu Chen
+      - Po-Chiao Lin
+      - Maojiang Su
+      - Han Liu
+    description: Accepted at the International Conference on Machine Learning (ICML), 2026.
+    summary: Accepted at the International Conference on Machine Learning (ICML), 2026.
+    edit_post:
+      url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=y7QeN8UAAAAJ&citation_for_view=y7QeN8UAAAAJ:YOwf2qJgpHMC
+      text: Google Scholar
+
+  - slug: scholar-kc-bzdyksqc
+    title: Learning Manifold Data with Flow Matching
+    date: '2026-07-06'
+    venue: International Conference on Machine Learning (ICML) 2026
+    tags:
+      - Flow Matching
+      - Generative Modeling
+      - Manifold Learning
+    authors:
+      - Sophia Pi
+      - Mingcheng Lu
+      - Jerry Yao-Chieh Hu
+      - Maojiang Su
+      - Weimin Wu
+      - Han Liu
+    description: Accepted at the International Conference on Machine Learning (ICML), 2026.
+    summary: Accepted at the International Conference on Machine Learning (ICML), 2026.
+    edit_post:
+      url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=y7QeN8UAAAAJ&citation_for_view=y7QeN8UAAAAJ:_kc_bZDykSQC
+      text: Google Scholar

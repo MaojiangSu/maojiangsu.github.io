@@ -5,7 +5,7 @@
     {{- partial `breadcrumbs.html` . }}
     <h1>{{ .Title }}</h1>
     {{- with .Description }}
-    <p class='publications-description'>{{ . }}</p>
+    <div class='publications-description'>{{ . | markdownify }}</div>
     {{- end }}
   </header>
 
@@ -15,16 +15,59 @@
 
   {{- $pages := .RegularPages.ByDate.Reverse }}
   {{- range $pages.GroupByDate `2006` }}
+  {{- $conferenceCount := 0 }}
+  {{- range .Pages }}
+    {{- $isScholar := eq .Params.editPost.Text `Google Scholar` }}
+    {{- $venue := .Params.venue }}
+    {{- if not $venue }}
+      {{- if .Params.conference }}
+        {{- $venue = .Params.conference }}
+      {{- else if $isScholar }}
+        {{- $venue = .Params.description }}
+      {{- else if .Params.editPost.Text }}
+        {{- $venue = .Params.editPost.Text }}
+      {{- end }}
+    {{- end }}
+    {{- $venueLower := lower $venue }}
+    {{- $isConference := or (in $venueLower `conference`) (in $venueLower `neural information processing systems`) (in $venueLower `neurips`) }}
+    {{- if $isConference }}
+      {{- $conferenceCount = add $conferenceCount 1 }}
+    {{- end }}
+  {{- end }}
+  {{- if gt $conferenceCount 0 }}
   <section class='publication-year-group' aria-labelledby='year-{{ .Key }}'>
     <h2 class='publication-year' id='year-{{ .Key }}'>{{ .Key }}</h2>
     <div class='publication-list'>
       {{- range .Pages }}
       {{- $isScholar := eq .Params.editPost.Text `Google Scholar` }}
+      {{- $venue := .Params.venue }}
+      {{- if not $venue }}
+        {{- if .Params.conference }}
+          {{- $venue = .Params.conference }}
+        {{- else if $isScholar }}
+          {{- $venue = .Params.description }}
+        {{- else if .Params.editPost.Text }}
+          {{- $venue = .Params.editPost.Text }}
+        {{- end }}
+      {{- end }}
+      {{- $venueLower := lower $venue }}
+      {{- $isConference := or (in $venueLower `conference`) (in $venueLower `neural information processing systems`) (in $venueLower `neurips`) }}
+      {{- if $isConference }}
       {{- $titleURL := .RelPermalink }}
       {{- if and $isScholar .Params.editPost.URL }}
         {{- $titleURL = .Params.editPost.URL }}
       {{- end }}
       <article class='publication-item'>
+        {{- $venueName := `Conference` }}
+        {{- if or (in $venueLower `iclr`) (in $venueLower `learning representations`) }}
+          {{- $venueName = `ICLR` }}
+        {{- else if or (in $venueLower `icml`) (in $venueLower `machine learning`) }}
+          {{- $venueName = `ICML` }}
+        {{- else if or (in $venueLower `neurips`) (in $venueLower `neural information processing systems`) }}
+          {{- $venueName = `NeurIPS` }}
+        {{- end }}
+        <div class='publication-badge'>{{ $venueName }}'{{ .Date.Format `06` }}</div>
+        <div class='publication-details'>
         <h3 class='publication-title'>
           <a href='{{ $titleURL }}'>{{ .Title }}</a>
         </h3>
@@ -43,16 +86,6 @@
         </p>
         {{- end }}
 
-        {{- $venue := .Params.venue }}
-        {{- if not $venue }}
-          {{- if .Params.conference }}
-            {{- $venue = .Params.conference }}
-          {{- else if $isScholar }}
-            {{- $venue = .Params.description }}
-          {{- else if .Params.editPost.Text }}
-            {{- $venue = .Params.editPost.Text }}
-          {{- end }}
-        {{- end }}
         {{- with $venue }}
         <p class='publication-venue'>{{ . }}</p>
         {{- end }}
@@ -84,10 +117,13 @@
             {{- end }}
           {{- end }}
         </div>
+        </div>
       </article>
+      {{- end }}
       {{- end }}
     </div>
   </section>
+  {{- end }}
   {{- end }}
 </div>
 

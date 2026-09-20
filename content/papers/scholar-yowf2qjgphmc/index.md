@@ -1,18 +1,21 @@
 ---
 title: In-Context Universal Approximation, Compositional Generalization, and Algorithm Emulation
-date: '2026-01-01'
+date: '2026-06-07'
 tags:
-- Publication
+- Foundation Models
+- In-Context Learning
+- Generalization
 author:
-- JYC Hu
-- HY Chen
-- PC Lin
-- M Su
-- H Liu
-description: International Conference on Machine Learning (ICML) 2026, 2026.
-summary: International Conference on Machine Learning (ICML) 2026, 2026.
+- Jerry Yao-Chieh Hu
+- Hong-Yu Chen
+- Po-Chiao Lin
+- Maojiang Su
+- Han Liu
+description: Accepted at the International Conference on Machine Learning (ICML), 2026.
+venue: International Conference on Machine Learning (ICML) 2026
+summary: Accepted at the International Conference on Machine Learning (ICML), 2026.
 editPost:
-  URL: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:YOwf2qJgpHMC
+  URL: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=y7QeN8UAAAAJ&citation_for_view=y7QeN8UAAAAJ:YOwf2qJgpHMC
   Text: Google Scholar
 ---
 
