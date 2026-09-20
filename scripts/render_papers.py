@@ -64,6 +64,7 @@ def build_front_matter(publication: dict[str, Any]) -> dict[str, Any]:
         "tags": publication["tags"],
         "author": publication["authors"],
         "description": publication["description"],
+        "venue": publication.get("venue") or "",
     }
 
     if publication.get("summary"):

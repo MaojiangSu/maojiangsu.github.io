@@ -1,4 +1,4 @@
 ---
 title: "Publications"
-description: "Preprints and articles by Maojiang Su."
+description: "Research papers on foundation models, generative modeling, AI for Science, and Embodied Intelligence."
 ---

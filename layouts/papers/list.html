@@ -1,0 +1,94 @@
+{{- define `main` }}
+
+<div class='publications-page'>
+  <header class='page-header publications-header'>
+    {{- partial `breadcrumbs.html` . }}
+    <h1>{{ .Title }}</h1>
+    {{- with .Description }}
+    <p class='publications-description'>{{ . }}</p>
+    {{- end }}
+  </header>
+
+  {{- with .Content }}
+  <div class='post-content publications-introduction'>{{ . }}</div>
+  {{- end }}
+
+  {{- $pages := .RegularPages.ByDate.Reverse }}
+  {{- range $pages.GroupByDate `2006` }}
+  <section class='publication-year-group' aria-labelledby='year-{{ .Key }}'>
+    <h2 class='publication-year' id='year-{{ .Key }}'>{{ .Key }}</h2>
+    <div class='publication-list'>
+      {{- range .Pages }}
+      {{- $isScholar := eq .Params.editPost.Text `Google Scholar` }}
+      {{- $titleURL := .RelPermalink }}
+      {{- if and $isScholar .Params.editPost.URL }}
+        {{- $titleURL = .Params.editPost.URL }}
+      {{- end }}
+      <article class='publication-item'>
+        <h3 class='publication-title'>
+          <a href='{{ $titleURL }}'>{{ .Title }}</a>
+        </h3>
+
+        {{- with .Params.author }}
+        <p class='publication-authors'>
+          {{- range $index, $author := . -}}
+            {{- if $index }}, {{ end -}}
+            {{- $normalizedAuthor := replaceRE `[^a-z]` `` (lower $author) -}}
+            {{- if or (eq $normalizedAuthor `maojiangsu`) (eq $normalizedAuthor `msu`) -}}
+              <strong>{{ $author }}</strong>
+            {{- else -}}
+              {{ $author }}
+            {{- end -}}
+          {{- end -}}
+        </p>
+        {{- end }}
+
+        {{- $venue := .Params.venue }}
+        {{- if not $venue }}
+          {{- if .Params.conference }}
+            {{- $venue = .Params.conference }}
+          {{- else if $isScholar }}
+            {{- $venue = .Params.description }}
+          {{- else if .Params.editPost.Text }}
+            {{- $venue = .Params.editPost.Text }}
+          {{- end }}
+        {{- end }}
+        {{- with $venue }}
+        <p class='publication-venue'>{{ . }}</p>
+        {{- end }}
+
+        <div class='publication-links' aria-label='Links for {{ .Title | plainify }}'>
+          {{- $pdfURL := `` }}
+          {{- with .Params.pdf }}
+            {{- $pdfURL = . }}
+          {{- else }}
+            {{- with .Resources.GetMatch `*.pdf` }}
+              {{- $pdfURL = .RelPermalink }}
+            {{- end }}
+          {{- end }}
+          {{- with $pdfURL }}
+          <a class='publication-link' href='{{ . }}'>Paper</a>
+          {{- end }}
+
+          {{- with .Params.editPost }}
+            {{- with .URL }}
+              {{- $label := `Link` }}
+              {{- if in . `scholar.google` }}
+                {{- $label = `Scholar` }}
+              {{- else if in . `github.com` }}
+                {{- $label = `Code` }}
+              {{- else if in . `arxiv.org` }}
+                {{- $label = `arXiv` }}
+              {{- end }}
+          <a class='publication-link' href='{{ . }}'>{{ $label }}</a>
+            {{- end }}
+          {{- end }}
+        </div>
+      </article>
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}
+</div>
+
+{{- end }}
