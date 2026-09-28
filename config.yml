@@ -67,9 +67,10 @@ params:
             You can find updates about my recent activities in the <a href="/news">News</a> section.
 
 
-          imageUrl: "MeInDesert.jpg"
-          imageWidth: 280
-          imageHeight: 210
+          imageUrl: "maojiang-su-portrait.png"
+          imageTitle: "Maojiang Su"
+          imageWidth: 240
+          imageHeight: 240
           buttons:
             - name: Research
               url: research/
