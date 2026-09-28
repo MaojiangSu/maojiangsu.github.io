@@ -1,16 +1,31 @@
 ---
-title: "Recent News"
-description: ""
+title: "News"
+description: "Updates on my research, PhD, and conference attendance."
+type: "news"
+url: "/news/"
+updates:
+  - label: "Upcoming"
+    text: "I plan to attend **NeurIPS 2026** in Atlanta this December."
+  - label: "Sep 2026"
+    date: "2026-09"
+    text: "Two papers accepted to **NeurIPS 2026**, including one"
+    spotlight: true
+  - label: "2026"
+    date: "2026"
+    text: "Two papers accepted to **ICML 2026**."
+  - label: "2025"
+    date: "2025"
+    text: "I attended **NeurIPS 2025**."
+  - label: "Sep 2025"
+    date: "2025-09"
+    text: "I started my **PhD in Computer Science at Northwestern University**, advised by **Han Liu**."
+  - label: "Sep 2025"
+    date: "2025-09"
+    text: "Our work on high-order flow matching was accepted to **NeurIPS 2025**."
+  - label: "May 2025"
+    date: "2025-05"
+    text: "Two papers accepted to **ICML 2025**."
+  - label: "Jan 2025"
+    date: "2025-01"
+    text: "One paper accepted to **ICLR 2025**."
 ---
-
-
-## Recent News
-
-* <span style="color: gray;">[Jane 2025] </span>  I obtained my **B.S. degree** at **University of Science and Technology of China (USTC)**.
-<br> <br>
-
-* <span style="color: gray;">[May 2025]</span> Two papers have been accepted for **ICML 2025**. 
-<br> <br>
-
-* <span style="color: gray;">[January 2025]</span> One papers  have been accepted for **ICLR 2025**.
-<br>

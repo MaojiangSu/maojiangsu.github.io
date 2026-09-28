@@ -1,0 +1,19 @@
+{{- define "main" }}
+<article class="news-page">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+  </header>
+  <ul class="news-list">
+    {{- range .Params.updates }}
+    <li class="news-item">
+      {{- if .date }}
+      <time class="news-date" datetime="{{ .date }}">{{ .label }}</time>
+      {{- else }}
+      <span class="news-date">{{ .label }}</span>
+      {{- end }}
+      <div class="news-text">{{ .text | markdownify }}{{ if .spotlight }} <strong class="news-spotlight">Spotlight</strong>.{{ end }}</div>
+    </li>
+    {{- end }}
+  </ul>
+</article>
+{{- end }}
