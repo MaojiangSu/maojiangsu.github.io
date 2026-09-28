@@ -13,6 +13,7 @@ author:
 - Zhao Song
 - Han Liu
 description: This paper investigates the transformer's capability for in-context learning (ICL) to simulate the training process of deep models, providing a provable explicit construction. Published in The International Conference on Machine Learning, 2025.
+venue: The International Conference on Machine Learning 2025
 summary: This paper investigates the transformer's capability for in-context learning (ICL) to simulate the training process of deep models, providing a provable explicit construction.
 cover:
   image: icl_deep_icml2025_poster.png

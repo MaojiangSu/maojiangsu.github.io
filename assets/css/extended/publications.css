@@ -114,6 +114,21 @@
     margin-top: 0.55rem;
 }
 
+.publication-presentation {
+    margin-inline-start: 0.3em;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.publication-spotlight {
+    color: #b91c1c;
+    font-weight: 700;
+}
+
+.dark .publication-spotlight {
+    color: #fca5a5;
+}
+
 .publication-link {
     color: var(--darkcolor);
     font-size: 0.8rem;

@@ -69,7 +69,11 @@
         <div class='publication-badge'>{{ $venueName }}'{{ .Date.Format `06` }}</div>
         <div class='publication-details'>
         <h3 class='publication-title'>
+          {{- if .Params.hidePublicationLinks }}
+          {{ .Title }}
+          {{- else }}
           <a href='{{ $titleURL }}'>{{ .Title }}</a>
+          {{- end }}
         </h3>
 
         {{- with .Params.author }}
@@ -86,10 +90,16 @@
         </p>
         {{- end }}
 
+        {{- $presentation := .Params.presentation }}
         {{- with $venue }}
-        <p class='publication-venue'>{{ . }}</p>
+        <p class='publication-venue'>{{ . }}
+          {{- with $presentation }}
+          <span class='publication-presentation{{ if eq . `Spotlight` }} publication-spotlight{{ end }}'>({{ . }})</span>
+          {{- end }}
+        </p>
         {{- end }}
 
+        {{- if not .Params.hidePublicationLinks }}
         <div class='publication-links' aria-label='Links for {{ .Title | plainify }}'>
           {{- $pdfURL := `` }}
           {{- with .Params.pdf }}
@@ -117,6 +127,7 @@
             {{- end }}
           {{- end }}
         </div>
+        {{- end }}
         </div>
       </article>
       {{- end }}

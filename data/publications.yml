@@ -7,6 +7,49 @@ sources:
     max_results: 100
 
 publications:
+  - slug: flow-matching-rl-sde
+    title: Flow Matching Reinforcement Learning via SDE Inference
+    date: '2026-09-27'
+    venue: Neural Information Processing Systems (NeurIPS) 2026
+    tags:
+      - Flow Matching
+      - Reinforcement Learning
+      - Policy Optimization
+    authors:
+      - Maojiang Su
+      - Tsung-En Lin
+      - Jerry Yao-Chieh Hu
+      - Guo Ye
+      - Haoran Lu
+      - Shang Wu
+      - Zhaoran Wang
+      - Han Liu
+    description: Accepted at NeurIPS 2026 as a Spotlight presentation.
+    extra_front_matter:
+      presentation: Spotlight
+      hidePublicationLinks: true
+
+  - slug: likelihood-free-generative-policy-optimization
+    title: Likelihood-Free Generative Policy Optimization
+    date: '2026-09-27'
+    venue: Neural Information Processing Systems (NeurIPS) 2026
+    tags:
+      - Diffusion Models
+      - Flow Matching
+      - Reinforcement Learning
+      - Policy Optimization
+    authors:
+      - Maojiang Su
+      - Qijie Zhu
+      - Shuyang Yu
+      - Yu Xiao
+      - Minshuo Chen
+      - Zhaoran Wang
+      - Han Liu
+    description: Accepted at NeurIPS 2026.
+    extra_front_matter:
+      hidePublicationLinks: true
+
   - slug: paper1
     title: "Computational limits of low-rank adaptation (lora) for transformer-based models"
     aliases:

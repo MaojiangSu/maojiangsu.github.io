@@ -1,0 +1,26 @@
+.research-page {
+    max-width: 760px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.research-content {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.research-content p {
+    margin: 0 0 1.5em;
+    text-align: justify;
+    text-wrap: pretty;
+}
+
+.research-content p:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .research-content p {
+        text-align: left;
+    }
+}

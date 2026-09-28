@@ -12,6 +12,9 @@ taxonomies:
     
 menu: # This part will be visible if we click the papers or news.
     main:
+        - name: Research
+          url: research/
+          weight: 1
         # - name: Books
         #   url: books/
         #   weight: 5 
@@ -68,6 +71,8 @@ params:
           imageWidth: 280
           imageHeight: 210
           buttons:
+            - name: Research
+              url: research/
             - name: Publications
               url: papers/
             # - name: Data

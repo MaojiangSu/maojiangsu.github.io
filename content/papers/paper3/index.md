@@ -17,6 +17,7 @@ author:
 - Jerry Yao-Chieh Hu
 - Han Liu
 description: This paper proposes GERM, an efficient genomic foundation model leveraging outlier removal techniques for low-cost fine-tuning and robust quantization. Published in the 42nd International Conference on Machine Learning (ICML), 2025.
+venue: The 42nd International Conference on Machine Learning 2025
 summary: GERM removes outliers to improve genomic model efficiency, enabling quantization and LoRA fine-tuning with minimal degradation.
 cover:
   image: _GERM__2025ICML_poster.png

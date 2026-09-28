@@ -17,6 +17,7 @@ author:
 - Minshuo Chen
 - Han Liu
 description: We present a unified framework for standard and high-order flow matching that incorporates trajectory derivatives up to an arbitrary order $K$. Our key innovation is establishing the marginalization technique that converts the intractable $K$-order loss into a simple conditional regression with exact gradients and identifying the consistency constraint. We establish sharp statistical rates of the $K$-order flow matching implemented with transformer networks.
+venue: Neural Information Processing Systems 2025
 cover:
   image: paper4.jpeg
   alt: 'High-Order Flow Matching: Unified Framework and Sharp Statistical Rates'

@@ -13,6 +13,7 @@ author:
 - Zhao Song
 - Han Liu
 description: We study the computational limits of Low-Rank Adaptation (LoRA) update for finetuning transformer-based models using fine-grained complexity theory. Published in The International Conference on Learning Representations, 2025.
+venue: The International Conference on Learning Representations 2025
 summary: We study the computational limits of Low-Rank Adaptation (LoRA) update for finetuning transformer-based models using fine-grained complexity theory.
 cover:
   image: paper1.png
