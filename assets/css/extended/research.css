@@ -19,6 +19,38 @@
     margin-bottom: 0;
 }
 
+.research-content .research-overview {
+    margin: 1.5rem 0 2rem;
+}
+
+.research-content .research-overview a {
+    display: block;
+    box-shadow: none;
+    cursor: zoom-in;
+}
+
+.research-content .research-overview a:focus-visible {
+    outline: 2px solid var(--darkcolor);
+    outline-offset: 4px;
+}
+
+.research-content .research-overview img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+}
+
+.research-content .research-overview figcaption {
+    margin: 0.5rem 0 0;
+    color: var(--secondary);
+    font-size: 0.8125rem;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: center;
+}
+
 @media screen and (max-width: 600px) {
     .research-content p {
         text-align: left;
