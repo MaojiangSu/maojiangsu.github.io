@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 from pathlib import Path
 from typing import Any, Iterable
@@ -57,6 +58,8 @@ def load_project_pages(path: Path = PROJECT_DATA_FILE) -> dict[str, dict[str, An
         if not isinstance(project, dict):
             raise ValueError(f"{slug}: project must be a mapping")
         require_fields(project, ("venue", "summary", "citation_key"), slug)
+        if "citation" in project:
+            validate_official_citation(project["citation"], project["citation_key"], slug)
         for link in project.get("links") or []:
             if not isinstance(link, dict) or not link.get("label"):
                 raise ValueError(f"{slug}: every project link needs a label")
@@ -73,6 +76,25 @@ def load_project_pages(path: Path = PROJECT_DATA_FILE) -> dict[str, dict[str, An
         for highlight in project.get("highlights") or []:
             require_fields(highlight, ("title", "text"), slug)
     return projects
+
+
+def validate_official_citation(citation: Any, citation_key: str, slug: str) -> None:
+    """Validate a stored official export without reconstructing its fields."""
+    if not isinstance(citation, dict):
+        raise ValueError(f"{slug}: citation must be a mapping")
+    require_fields(citation, ("source_name", "source_url", "bibtex"), slug)
+    source = urlparse(str(citation["source_url"]))
+    if source.scheme not in {"http", "https"} or not source.netloc:
+        raise ValueError(f"{slug}: citation source must be an HTTP or HTTPS URL")
+    bibtex = citation["bibtex"]
+    if not isinstance(bibtex, str):
+        raise ValueError(f"{slug}: citation BibTeX must be text")
+    header = re.match(r"\s*@inproceedings\s*\{\s*([^,]+),", bibtex, re.IGNORECASE)
+    if not header or header.group(1).strip() != citation_key or not bibtex.rstrip().endswith("}"):
+        raise ValueError(f"{slug}: citation must be a complete BibTeX entry with its official key")
+    for field in ("title", "author", "booktitle", "year"):
+        if not re.search(rf"^\s*{field}\s*=\s*\{{", bibtex, re.MULTILINE | re.IGNORECASE):
+            raise ValueError(f"{slug}: citation is missing {field}")
 
 
 def validate_slug(value: Any) -> str:

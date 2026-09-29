@@ -64,8 +64,15 @@
       <h2 id="bibtex">BibTeX</h2>
       <button class="project-copy" type="button" data-project-copy hidden>Copy BibTeX</button>
     </div>
-    {{- $citation := printf "@inproceedings{%s,\n  title = {{%s}},\n  author = {%s},\n  booktitle = {%s},\n  year = {%s}\n}" $project.citation_key .Title (delimit .Params.author " and ") .Params.venue (.Date.Format "2006") }}
-    <pre><code id="project-bibtex">{{ $citation }}</code></pre>
+    {{- $citation := "" }}
+    {{- with $project.citation }}
+      {{- $citation = .bibtex }}
+      <p class="project-citation-source">Official BibTeX from <a href="{{ .source_url }}" target="_blank" rel="noopener noreferrer">{{ .source_name }}</a>.</p>
+    {{- else }}
+      {{- $citation = printf "%% Provisional citation; official BibTeX pending.\n@inproceedings{%s,\n  title = {{%s}},\n  author = {%s},\n  booktitle = {%s},\n  year = {%s}\n}" $project.citation_key .Title (delimit .Params.author " and ") .Params.venue (.Date.Format "2006") }}
+      <p class="project-citation-source">Provisional citation based on the authors' acceptance information. Official BibTeX pending.</p>
+    {{- end }}
+    <pre tabindex="0" aria-label="BibTeX citation"><code id="project-bibtex">{{ $citation }}</code></pre>
     <p class="project-copy-status" role="status" aria-live="polite"></p>
   </section>
 

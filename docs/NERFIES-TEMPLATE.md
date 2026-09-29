@@ -17,6 +17,8 @@ Changes: integrated the centered paper header, author row, resource buttons, abs
 
 A project entry needs `venue`, `summary`, `citation_key`, and an abstract either in its project entry or its publication record. `title` can specify the published title while preserving older title aliases in publication matching. `highlights` contains `title` / `text` pairs.
 
+`citation` stores the complete official BibTeX export as a YAML literal block (`bibtex: |`), together with `source_name` and `source_url`. Preserve all exported fields and the official citation key; do not reconstruct the entry from page metadata. The page displays and copies this stored text directly, with a visible source link. Six exports were retrieved from PMLR / ICLR / NeurIPS Proceedings on 2026-09-29. Two new NeurIPS 2026 papers still use explicitly labeled provisional citations until their official exports are available; their copied text also includes a provisional comment. Scholar synchronization does not overwrite these citations.
+
 `links` contains a label and exactly one `url` or bundle-relative `file`. Resource links remain hidden when `hidePublicationLinks: true`; this does not hide the local project-page link. Do not add private PDFs to a bundle merely to fill a resource button.
 
 Optional `teaser` and `poster` mappings accept `image`, `alt`, and `caption`. Optional `sections` accept a `title`, Markdown `text`, and an optional `figure` with the same fields. Images are resolved within each paper bundle, and large display images are resized by Hugo without changing originals. Omitted sections do not render placeholders. Only add figures, results, links, and affiliations verified from the paper or provided by its authors.

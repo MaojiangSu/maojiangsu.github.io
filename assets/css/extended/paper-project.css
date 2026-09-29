@@ -42,7 +42,9 @@
 .project-copy { border: 1px solid #cbd3df; border-radius: 6px; padding: 9px 13px; color: #35465f; font: inherit; font-size: 14px; cursor: pointer; background: #fff; }
 .project-copy[hidden] { display: none; }
 .project-copy:hover { background: #edf1f6; }
-.project-citation pre { background: #f3f5f8; border-radius: 8px; padding: 22px; font-size: 13px; line-height: 1.7; overflow-x: auto; white-space: pre-wrap; overflow-wrap: anywhere; }
+.project-citation pre { background: #f3f5f8; border-radius: 8px; padding: 22px; font-size: 13px; line-height: 1.7; max-height: 32rem; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; }
+.project-citation pre:focus-visible { outline: 3px solid #6a7ba2; outline-offset: 3px; }
+.project-citation-source { margin: 0 0 14px; color: #536174; font-size: 14px; line-height: 1.6; }
 .project-citation code { font-family: Consolas, "Liberation Mono", monospace; }
 .project-copy-status { min-height: 1.5em; margin-top: 8px; color: #536174; font-size: 13px; }
 .project-attribution { padding: 24px 0 12px; border-top: 1px solid #e4e8ee; color: #707784; text-align: center; font-size: 12px; line-height: 1.8; }

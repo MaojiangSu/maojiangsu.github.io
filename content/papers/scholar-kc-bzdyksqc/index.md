@@ -8,9 +8,9 @@ tags:
 author:
 - Sophia Pi
 - Mingcheng Lu
-- Jerry Yao-Chieh Hu
 - Maojiang Su
 - Weimin Wu
+- Jerry Yao-Chieh Hu
 - Han Liu
 description: Flow-matching theory that follows the data's intrinsic dimension, rather than the ambient space.
 venue: International Conference on Machine Learning (ICML) 2026

@@ -50,7 +50,26 @@ projects:
 
   scholar-kc-bzdyksqc:
     venue: ICML 2026
-    citation_key: pi2026manifoldflow
+    citation_key: pmlr-v306-pi26a
+    citation:
+      source_name: PMLR
+      source_url: https://proceedings.mlr.press/v306/pi26a.html
+      bibtex: |
+        @InProceedings{pmlr-v306-pi26a,
+          title = 	 {Learning Manifold Data with Flow Matching},
+          author =       {Pi, Sophia and Lu, Mingcheng and Su, Maojiang and Wu, Weimin and Hu, Jerry Yao-Chieh and Liu, Han},
+          booktitle = 	 {Proceedings of the 43rd International Conference on Machine Learning},
+          pages = 	 {98666--98695},
+          year = 	 {2026},
+          editor = 	 {Zhang, Tong and Dudik, Miroslav and Jaggi, Martin and Agarwal, Alekh and Li, Sharon and Schuurmans, Dale and Zhu, Jerry and Berkenkamp, Felix and Dong, Hanze and Bietti, Alberto},
+          volume = 	 {306},
+          series = 	 {Proceedings of Machine Learning Research},
+          month = 	 {06--11 Jul},
+          publisher =    {PMLR},
+          pdf = 	 {https://raw.githubusercontent.com/mlresearch/v306/main/assets/pi26a/pi26a.pdf},
+          url = 	 {https://proceedings.mlr.press/v306/pi26a.html},
+          abstract = 	 {We study flow-matching transformers when data lie on a low-dimensional manifold. Our key insight is a flow decomposition that splits motion along the manifold from motion off the manifold. The scheme works for first and higher-order flow matching and ties model complexity to the intrinsic manifold dimension. Building on these, we establish tighter sample-complexity bounds for velocity approximation, velocity estimation, and distribution estimation. Our results show how flow-matching transformers escape the curse of dimensionality by utilizing intrinsic data structure.}
+        }
     summary: Flow-matching theory that follows the data's intrinsic dimension, rather than the ambient space.
     abstract: >-
       We study the statistical efficiency of flow-matching transformers when data lie in a
@@ -76,7 +95,26 @@ projects:
 
   scholar-yowf2qjgphmc:
     venue: ICML 2026
-    citation_key: hu2026incontextemulation
+    citation_key: pmlr-v306-hu26h
+    citation:
+      source_name: PMLR
+      source_url: https://proceedings.mlr.press/v306/hu26h.html
+      bibtex: |
+        @InProceedings{pmlr-v306-hu26h,
+          title = 	 {In-Context Universal Approximation, Compositional Generalization, and Algorithm Emulation},
+          author =       {Hu, Jerry Yao-Chieh and Chen, Hong-Yu and Lin, Po-Chiao and Su, Maojiang and Liu, Han},
+          booktitle = 	 {Proceedings of the 43rd International Conference on Machine Learning},
+          pages = 	 {44705--44798},
+          year = 	 {2026},
+          editor = 	 {Zhang, Tong and Dudik, Miroslav and Jaggi, Martin and Agarwal, Alekh and Li, Sharon and Schuurmans, Dale and Zhu, Jerry and Berkenkamp, Felix and Dong, Hanze and Bietti, Alberto},
+          volume = 	 {306},
+          series = 	 {Proceedings of Machine Learning Research},
+          month = 	 {06--11 Jul},
+          publisher =    {PMLR},
+          pdf = 	 {https://raw.githubusercontent.com/mlresearch/v306/main/assets/hu26h/hu26h.pdf},
+          url = 	 {https://proceedings.mlr.press/v306/hu26h.html},
+          abstract = 	 {We study in-context universal approximation and compositional generalization in frozen softmax Transformers as prompt-programmable computation. We prove in-context universality via in-context emulation: a fixed-weight Transformer emulates target computations specified by the prompt and hence approximates a broad class of continuous sequence-to-sequence functions. Building on this view, we establish one-pass and multi-pass composition theorems: prompts associated with simple “subprograms” let the same fixed Transformer execute their composition and thereby synthesize more complex programs on-the-fly. These results support a principled view of prompts as programs and fixed-weight Transformers as program interpreters. They also provide concrete mechanisms by which GPT-style models execute and assemble algorithms in context. Please see arXiv for the full version.}
+        }
     summary: Prompts act as programs; a fixed-weight transformer executes and composes them.
     abstract: >-
       We study in-context universal approximation and compositional generalization in softmax
@@ -102,7 +140,23 @@ projects:
 
   paper4:
     venue: NeurIPS 2025
-    citation_key: su2025highorderflow
+    citation_key: NEURIPS2025_4163873c
+    citation:
+      source_name: NeurIPS Proceedings
+      source_url: https://proceedings.neurips.cc/paper_files/paper/27829-/bibtex
+      bibtex: |
+        @inproceedings{NEURIPS2025_4163873c,
+         author = {Su, Maojiang and Hu, Jerry Yao-Chieh and Lee, Yi-Chen and Zhu, Ning and Chung, Jui-Hui and Wu, Shang and Song, Zhao and Chen, Minshuo and Liu, Han},
+         booktitle = {Advances in Neural Information Processing Systems},
+         doi = {10.52202/085713-1528},
+         editor = {D. Belgrave and C. Zhang and H. Lin and R. Pascanu and P. Koniusz and M. Ghassemi and N. Chen},
+         pages = {45820--45932},
+         publisher = {Curran Associates, Inc.},
+         title = {High-Order Flow Matching: Unified Framework and Sharp Statistical Rates},
+         url = {https://proceedings.neurips.cc/paper_files/paper/2025/file/4163873c9ad623a87989d0a6eefe9442-Paper-Conference.pdf},
+         volume = {38, Main Conference},
+         year = {2025}
+        }
     summary: A common theoretical foundation for first-order and higher-order flow matching.
     links:
       - label: Paper
@@ -121,6 +175,25 @@ projects:
     title: In-Context Deep Learning via Transformer Models
     venue: ICML 2025
     citation_key: pmlr-v267-wu25aa
+    citation:
+      source_name: PMLR
+      source_url: https://proceedings.mlr.press/v267/wu25aa.html
+      bibtex: |
+        @InProceedings{pmlr-v267-wu25aa,
+          title = 	 {In-Context Deep Learning via Transformer Models},
+          author =       {Wu, Weimin and Su, Maojiang and Hu, Jerry Yao-Chieh and Song, Zhao and Liu, Han},
+          booktitle = 	 {Proceedings of the 42nd International Conference on Machine Learning},
+          pages = 	 {67670--67718},
+          year = 	 {2025},
+          editor = 	 {Singh, Aarti and Fazel, Maryam and Hsu, Daniel and Lacoste-Julien, Simon and Berkenkamp, Felix and Maharaj, Tegan and Wagstaff, Kiri and Zhu, Jerry},
+          volume = 	 {267},
+          series = 	 {Proceedings of Machine Learning Research},
+          month = 	 {13--19 Jul},
+          publisher =    {PMLR},
+          pdf = 	 {https://raw.githubusercontent.com/mlresearch/v267/main/assets/wu25aa/wu25aa.pdf},
+          url = 	 {https://proceedings.mlr.press/v267/wu25aa.html},
+          abstract = 	 {We investigate the transformer’s capability for in-context learning (ICL) to simulate the training process of deep models. Our key contribution is providing a positive example of using a transformer to train a deep neural network by gradient descent in an implicit fashion via ICL. Specifically, we provide an explicit construction of a $(2N+4)L$-layer transformer capable of simulating $L$ gradient descent steps of an $N$-layer ReLU network through ICL. We also give the theoretical guarantees for the approximation within any given error and the convergence of the ICL gradient descent. Additionally, we extend our analysis to the more practical setting using Softmax-based transformers. We validate our findings on synthetic datasets for 3-layer, 4-layer, and 6-layer neural networks. The results show that ICL performance matches that of direct training.}
+        }
     summary: A transformer can train a deep neural network in context without changing its own weights.
     abstract: >-
       We investigate whether a transformer can simulate the training of a deep model through
@@ -151,6 +224,25 @@ projects:
   paper3:
     venue: ICML 2025
     citation_key: pmlr-v267-luo25g
+    citation:
+      source_name: PMLR
+      source_url: https://proceedings.mlr.press/v267/luo25g.html
+      bibtex: |
+        @InProceedings{pmlr-v267-luo25g,
+          title = 	 {Fast and Low-Cost Genomic Foundation Models via Outlier Removal},
+          author =       {Luo, Haozheng and Qiu, Chenghao and Su, Maojiang and Zhou, Zhihan and Mehta, Zoe and Ye, Guo and Hu, Jerry Yao-Chieh and Liu, Han},
+          booktitle = 	 {Proceedings of the 42nd International Conference on Machine Learning},
+          pages = 	 {41254--41289},
+          year = 	 {2025},
+          editor = 	 {Singh, Aarti and Fazel, Maryam and Hsu, Daniel and Lacoste-Julien, Simon and Berkenkamp, Felix and Maharaj, Tegan and Wagstaff, Kiri and Zhu, Jerry},
+          volume = 	 {267},
+          series = 	 {Proceedings of Machine Learning Research},
+          month = 	 {13--19 Jul},
+          publisher =    {PMLR},
+          pdf = 	 {https://raw.githubusercontent.com/mlresearch/v267/main/assets/luo25g/luo25g.pdf},
+          url = 	 {https://proceedings.mlr.press/v267/luo25g.html},
+          abstract = 	 {To address the challenge of scarce computational resources in genomic modeling, we introduce GERM, a genomic foundation model optimized for accessibility and adaptability. GERM improves upon models like DNABERT-2 by eliminating outliers that hinder low-rank adaptation and post-training quantization, enhancing both efficiency and robustness. We replace the vanilla attention layer with an outlier-free mechanism inspired by associative memory models. By removing outliers during both pre-training and fine-tuning, this approach accelerates adaptation, reduces computational costs, and enhances quantization robustness within acceptable loss margins. Additionally, we propose GERM-T, a strategy that employs small-step continual learning within the outlier-free framework, leveraging original checkpoints to avoid retraining from scratch. Empirically, GERM improves fine-tuning performance by 37.98% and quantization by 64.34% over the baseline model. It also reduces average kurtosis by 92.14% and maximum infinity norm by 82.77%. Compared to leading methods, GERM consistently delivers superior performance, offering a practical solution for genomic modeling in resource-constrained settings.}
+        }
     summary: Remove outliers to make genomic foundation models easier to adapt and quantize.
     links:
       - label: Paper
@@ -175,7 +267,21 @@ projects:
   paper1:
     title: Computational Limits of Low-Rank Adaptation (LoRA) Fine-Tuning for Transformer Models
     venue: ICLR 2025
-    citation_key: hu2025loralimits
+    citation_key: ICLR2025_12143893
+    citation:
+      source_name: ICLR Proceedings
+      source_url: https://proceedings.iclr.cc/paper_files/paper/2629-/bibtex
+      bibtex: |
+        @inproceedings{ICLR2025_12143893,
+         author = {Hu, Jerry Yao-Chieh and Su, Maojiang and Kuo, En-Jui and Song, Zhao and Liu, Han},
+         booktitle = {International Conference on Learning Representations},
+         editor = {Y. Yue and A. Garg and N. Peng and F. Sha and R. Yu},
+         pages = {6167--6206},
+         title = {Computational Limits of Low-Rank Adaptation (LoRA) Fine-Tuning for Transformer Models},
+         url = {https://proceedings.iclr.cc/paper_files/paper/2025/file/12143893d9d37c3569dda800b95cabd9-Paper-Conference.pdf},
+         volume = {2025},
+         year = {2025}
+        }
     summary: When can low-rank fine-tuning be computed efficiently, and where are its limits?
     links:
       - label: Paper
