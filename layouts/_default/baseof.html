@@ -75,6 +75,9 @@
 {{- if eq site.Params.defaultTheme `dark` -}}
 {{- print " dark" }}
 {{- end -}}
+{{- if .Params.project -}}
+{{- print " paper-project-page" -}}
+{{- end -}}
 " id="top">
     {{- if not .IsHome  }}
     {{- partialCached "header.html" . .Page -}}

@@ -1,0 +1,79 @@
+{{/* Adapted from nerfies/nerfies.github.io. See docs/NERFIES-TEMPLATE.md. */}}
+{{- define "main" }}
+{{- $project := index site.Data.paper_projects.projects .Params.project }}
+<article class="paper-project" aria-labelledby="project-title">
+  <a class="project-back" href="{{ "papers/" | relURL }}">&larr; All publications</a>
+  <header class="project-hero">
+    <p class="project-venue">{{ $project.venue }}{{ with .Params.presentation }} <span class="project-award">{{ . }}</span>{{ end }}</p>
+    <h1 id="project-title">{{ .Title }}</h1>
+    <div class="project-authors" aria-label="Authors">
+      {{- range $i, $author := .Params.author }}
+      <span class="project-author">{{ if eq $author "Maojiang Su" }}<a href="{{ "/" | relURL }}">{{ $author }}</a>{{ else }}{{ $author }}{{ end }}{{ if lt (add $i 1) (len $.Params.author) }},{{ end }}</span>
+      {{- end }}
+    </div>
+    <div class="project-links" aria-label="Paper resources">
+      {{- if not .Params.hidePublicationLinks }}
+      {{- range $project.links }}
+        {{- $href := .url }}
+        {{- with .file }}{{ $href = (printf "%s%s" $.RelPermalink .) }}{{ end }}
+        <a class="project-button" href="{{ $href }}" target="_blank" rel="noopener noreferrer">{{ partial "project-icon.html" .label }}<span>{{ .label }}</span></a>
+      {{- end }}
+      {{- end }}
+      <a class="project-button project-button-secondary" href="#bibtex">{{ partial "project-icon.html" "Cite" }}<span>Cite</span></a>
+    </div>
+    <p class="project-summary">{{ $project.summary }}</p>
+  </header>
+
+  {{- with $project.teaser }}
+    {{- partial "project-figure.html" (dict "page" $ "figure" . "class" "project-teaser") }}
+  {{- end }}
+
+  <section class="project-section project-abstract" aria-labelledby="abstract">
+    <h2 id="abstract">Abstract</h2>
+    <div class="project-prose">{{ $.Params.abstract | markdownify }}</div>
+  </section>
+
+  {{- with $project.highlights }}
+  <section class="project-section" aria-labelledby="key-results">
+    <h2 id="key-results">Key results</h2>
+    <div class="project-highlights">
+      {{- range . }}
+      <div class="project-highlight"><h3>{{ .title }}</h3><p>{{ .text }}</p></div>
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}
+
+  {{- range $project.sections }}
+  <section class="project-section project-prose">
+    <h2>{{ .title }}</h2>
+    {{ .text | markdownify }}
+    {{ with .figure }}{{ partial "project-figure.html" (dict "page" $ "figure" . "class" "project-method-figure") }}{{ end }}
+  </section>
+  {{- end }}
+
+  {{- with $project.poster }}
+  <section class="project-section project-poster" aria-labelledby="poster">
+    <h2 id="poster">Poster</h2>
+    {{ partial "project-figure.html" (dict "page" $ "figure" . "class" "project-poster-figure") }}
+  </section>
+  {{- end }}
+
+  <section class="project-section project-citation" aria-labelledby="bibtex">
+    <div class="project-citation-heading">
+      <h2 id="bibtex">BibTeX</h2>
+      <button class="project-copy" type="button" data-project-copy hidden>Copy BibTeX</button>
+    </div>
+    {{- $citation := printf "@inproceedings{%s,\n  title = {{%s}},\n  author = {%s},\n  booktitle = {%s},\n  year = {%s}\n}" $project.citation_key .Title (delimit .Params.author " and ") .Params.venue (.Date.Format "2006") }}
+    <pre><code id="project-bibtex">{{ $citation }}</code></pre>
+    <p class="project-copy-status" role="status" aria-live="polite"></p>
+  </section>
+
+  <footer class="project-attribution">
+    <p>Project-page template adapted from <a href="https://nerfies.github.io/">Nerfies</a>, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">CC BY-SA 4.0</a>.</p>
+    <p><a href="{{ "papers/" | relURL }}">Back to publications</a></p>
+  </footer>
+</article>
+{{- $script := resources.Get "js/paper-project.js" | resources.Minify | fingerprint }}
+<script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" crossorigin="anonymous" defer></script>
+{{- end }}

@@ -1,0 +1,193 @@
+# Hand-maintained project-page content. Scholar synchronization never writes this file.
+# Keys match the stable slugs in data/publications.yml; existing URLs are preserved.
+projects:
+  flow-matching-rl-sde:
+    venue: NeurIPS 2026
+    citation_key: su2026flowsde
+    summary: When does reinforcement learning with stochastic sampling improve a flow model's deterministic policy?
+    abstract: >-
+      Reinforcement learning is a promising approach for fine-tuning flow matching models.
+      A common strategy uses stochastic SDE inference during training to support exploration,
+      then returns to deterministic ODE inference at deployment. We develop a unified framework
+      based on diffusion-flow duality that covers both reward fine-tuning of generative models
+      and policy optimization with flow policies. We prove that the two inference processes
+      induce close terminal distributions when the flow-matching error is small. We further
+      give sufficient conditions under which policy improvements during stochastic training
+      transfer to deterministic deployment. The analysis explains failure modes caused by weak
+      pretraining or excessive drift during RL. Experiments on synthetic and continuous-control
+      tasks validate the theory and evaluate the resulting algorithms.
+    highlights:
+      - title: A unified RL framework
+        text: Connect reward fine-tuning and flow-policy optimization through stochastic inference, recovering existing methods and motivating new algorithms.
+      - title: A deployment guarantee
+        text: Bound the difference between SDE and ODE terminal distributions and identify when a training-time policy improvement survives deterministic deployment.
+      - title: Theory meets control
+        text: Use synthetic experiments and continuous-control tasks to test the theory and the proposed flow-policy optimization algorithms.
+
+  likelihood-free-generative-policy-optimization:
+    venue: NeurIPS 2026
+    citation_key: su2026lfgpo
+    summary: Improve diffusion and flow policies without evaluating intractable action likelihoods.
+    abstract: >-
+      Diffusion and flow models offer expressive policies for continuous control, but their
+      action likelihoods are generally intractable. This makes many standard policy optimization
+      methods difficult to apply. We introduce Likelihood-Free Generative Policy Optimization
+      (LFGPO), a two-stage framework that separates policy improvement from generative model
+      training. A lightweight ratio model first captures the desired policy update. A conditional
+      drift-matching objective then transfers that update to a diffusion or flow policy.
+      The framework accommodates update rules including PPO and GRPO. Our analysis relates the
+      target policy to the Doob h-transform, proves gradient equivalence between the practical
+      and ideal drift-matching objectives, and establishes a minimum-control-energy interpretation
+      in the diffusion setting. Experiments on MuJoCo continuous-control tasks evaluate both
+      diffusion and flow implementations.
+    highlights:
+      - title: Separate improvement from fitting
+        text: Learn a likelihood-ratio model for the policy update, then distill the update into an expressive generative policy.
+      - title: Diffusion and flow policies
+        text: Use conditional drift matching to support multiple policy classes and update rules without exact action-likelihood evaluation.
+      - title: An optimal-control view
+        text: Characterize the target through the Doob h-transform and connect the diffusion objective to minimum-energy control under the specified endpoint constraints.
+
+  scholar-kc-bzdyksqc:
+    venue: ICML 2026
+    citation_key: pi2026manifoldflow
+    summary: Flow-matching theory that follows the data's intrinsic dimension, rather than the ambient space.
+    abstract: >-
+      We study the statistical efficiency of flow-matching transformers when data lie in a
+      low-dimensional linear subspace. The key idea is to decompose the velocity field into
+      motion along the data subspace and motion toward it. This separates the nonlinear
+      learning problem from a simple normal contraction. We derive guarantees for velocity
+      approximation, velocity estimation, and distribution estimation whose statistical rates
+      depend on the intrinsic dimension. The decomposition also extends to higher-order flow
+      matching. These results explain how a suitable model structure can exploit low-dimensional
+      data and avoid the ambient-dimensional rates of a full-space analysis.
+    links:
+      - label: Paper
+        url: https://openreview.net/pdf?id=Q97luuOnqy
+      - label: OpenReview
+        url: https://openreview.net/forum?id=Q97luuOnqy
+    highlights:
+      - title: Separate tangent and normal motion
+        text: Decompose the velocity field under a linear latent-subspace assumption to isolate the part of the dynamics that must be learned.
+      - title: Intrinsic-dimension rates
+        text: Establish approximation, estimation, and Wasserstein distribution guarantees that reflect low-dimensional data structure.
+      - title: Beyond first-order flows
+        text: Extend the velocity decomposition to higher-order flow matching and obtain corresponding intrinsic-dimension statistical rates.
+
+  scholar-yowf2qjgphmc:
+    venue: ICML 2026
+    citation_key: hu2026incontextemulation
+    summary: Prompts act as programs; a fixed-weight transformer executes and composes them.
+    abstract: >-
+      We study in-context universal approximation and compositional generalization in softmax
+      transformers with fixed weights. A prompt specifies the computation to perform, while
+      the transformer serves as an interpreter. We prove that a fixed-weight transformer can
+      approximate a broad class of continuous sequence-to-sequence functions through this
+      in-context emulation mechanism. We also establish composition results: prompts for simpler
+      computations can be combined so that the same transformer executes their composition.
+      The results give a constructive perspective on how a single model can carry out different
+      algorithms and assemble more complex computations without task-specific weight updates.
+    links:
+      - label: Paper
+        url: https://openreview.net/pdf?id=qOCTnhx4il
+      - label: OpenReview
+        url: https://openreview.net/forum?id=qOCTnhx4il
+    highlights:
+      - title: In-context universality
+        text: Construct a fixed-weight softmax transformer that approximates a broad class of continuous sequence-to-sequence functions using task-specific prompts.
+      - title: Compositional generalization
+        text: Show how prompts for simpler computations allow the same model to execute their composition.
+      - title: A program-interpreter view
+        text: Separate the task description from the computation engine, offering a theoretical account of prompt-programmable behavior.
+
+  paper4:
+    venue: NeurIPS 2025
+    citation_key: su2025highorderflow
+    summary: A common theoretical foundation for first-order and higher-order flow matching.
+    links:
+      - label: Paper
+        file: high_order_FM_ver_prelim.pdf
+      - label: Proceedings
+        url: https://proceedings.neurips.cc/paper_files/paper/2025/hash/4163873c9ad623a87989d0a6eefe9442-Abstract-Conference.html
+    highlights:
+      - title: One framework, arbitrary order
+        text: Incorporate trajectory derivatives up to order K within a common formulation of flow matching.
+      - title: Tractable training objectives
+        text: Convert an intractable marginal loss into conditional regression with exact gradients and identify the required consistency constraint.
+      - title: Sharp statistical guarantees
+        text: Establish statistical rates for transformer-parameterized high-order flow matching that match minimax lower bounds up to logarithmic factors.
+
+  paper2:
+    title: In-Context Deep Learning via Transformer Models
+    venue: ICML 2025
+    citation_key: pmlr-v267-wu25aa
+    summary: A transformer can train a deep neural network in context without changing its own weights.
+    abstract: >-
+      We investigate whether a transformer can simulate the training of a deep model through
+      in-context learning. We give an explicit construction of a transformer that carries out
+      gradient descent on a multilayer ReLU network while keeping its own weights fixed.
+      The analysis provides approximation and convergence guarantees and extends to
+      softmax-based transformers. Experiments with three-, four-, and six-layer neural networks
+      on synthetic datasets compare in-context training with direct gradient-based training.
+      This establishes a constructive example of learning a deep model entirely through context.
+    links:
+      - label: Paper
+        file: 6952_In_Context_Deep_Learning_.pdf
+      - label: Proceedings
+        url: https://proceedings.mlr.press/v267/wu25aa.html
+      - label: Poster
+        file: icl_deep_icml2025_poster.pdf
+    poster:
+      image: icl_deep_icml2025_poster.png
+      alt: Conference poster presenting the in-context deep-learning construction and experiments.
+    highlights:
+      - title: Learning inside a forward pass
+        text: Explicitly construct a transformer that simulates gradient-descent training of a deep ReLU network from information supplied in context.
+      - title: Provable approximation
+        text: Establish approximation and convergence guarantees, including an extension to softmax-based transformers.
+      - title: Synthetic validation
+        text: Compare in-context learning with direct training for deep networks of several depths.
+
+  paper3:
+    venue: ICML 2025
+    citation_key: pmlr-v267-luo25g
+    summary: Remove outliers to make genomic foundation models easier to adapt and quantize.
+    links:
+      - label: Paper
+        file: 832_Fast_and_Low_Cost_Genomic_.pdf
+      - label: Code
+        url: https://github.com/MAGICS-LAB/GERM
+      - label: Proceedings
+        url: https://proceedings.mlr.press/v267/luo25g.html
+      - label: Poster
+        file: _GERM__2025ICML_poster.pdf
+    poster:
+      image: _GERM__2025ICML_poster.png
+      alt: GERM conference poster describing outlier removal, efficient adaptation, and quantization results.
+    highlights:
+      - title: Outlier-free model design
+        text: Replace standard attention with an outlier-free mechanism to improve the behavior of genomic foundation models.
+      - title: Efficient adaptation and quantization
+        text: Evaluate how outlier removal improves low-rank fine-tuning and makes low-precision deployment more robust.
+      - title: Reuse existing checkpoints
+        text: Introduce GERM-T, a small-step continual-learning strategy that reduces the need to pretrain again from scratch.
+
+  paper1:
+    title: Computational Limits of Low-Rank Adaptation (LoRA) Fine-Tuning for Transformer Models
+    venue: ICLR 2025
+    citation_key: hu2025loralimits
+    summary: When can low-rank fine-tuning be computed efficiently, and where are its limits?
+    links:
+      - label: Paper
+        file: theory_of_lora_iclr_2025.pdf
+      - label: arXiv
+        url: https://arxiv.org/abs/2406.03136
+      - label: Proceedings
+        url: https://proceedings.iclr.cc/paper_files/paper/2025/hash/12143893d9d37c3569dda800b95cabd9-Abstract-Conference.html
+    highlights:
+      - title: A computational phase transition
+        text: Identify a norm-dependent boundary between efficient approximation and conditional hardness under the Strong Exponential Time Hypothesis.
+      - title: Almost-linear algorithms
+        text: Exploit hierarchical low-rank structure to approximate the gradients involved in LoRA fine-tuning.
+      - title: Partial and full adaptation
+        text: Analyze different choices of trainable attention projections within the same computational framework.

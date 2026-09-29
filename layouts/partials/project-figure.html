@@ -1,0 +1,11 @@
+{{- $resource := .page.Resources.GetMatch .figure.image }}
+{{- with $resource }}
+{{- $display := . }}
+{{- if gt .Width 1600 }}{{ $display = .Resize "1600x webp q85" }}{{ end }}
+<figure class="project-figure {{ $.class }}">
+  <a href="{{ .RelPermalink }}" target="_blank" rel="noopener noreferrer" aria-label="Open {{ $.figure.alt }} at full size">
+    <img src="{{ $display.RelPermalink }}" alt="{{ $.figure.alt }}" width="{{ $display.Width }}" height="{{ $display.Height }}" loading="lazy" decoding="async">
+  </a>
+  {{- with $.figure.caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>
+{{- end }}
