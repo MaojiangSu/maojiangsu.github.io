@@ -1,5 +1,5 @@
 ---
-title: Minimalist Softmax Attention Provably Learns Constrained Boolean Functions
+title: Minimalist softmax attention provably learns constrained boolean functions
 date: '2025-01-01'
 tags:
 - Publication

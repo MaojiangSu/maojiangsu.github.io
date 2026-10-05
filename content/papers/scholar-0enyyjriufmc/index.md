@@ -1,5 +1,5 @@
 ---
-title: On Flow Matching KL Divergence
+title: On flow matching kl divergence
 date: '2025-01-01'
 tags:
 - Publication

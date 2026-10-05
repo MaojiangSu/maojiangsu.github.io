@@ -11,8 +11,8 @@ author:
 - M Shen
 - S Yu
 - Y Xiao
-- J Zhao
 - S Wu
+- J Wang
 - J Zhang
 - Maojiang Su
 description: arXiv preprint arXiv:2606.17511, 2026.
