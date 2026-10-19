@@ -101,6 +101,27 @@ publications:
     id: y7QeN8UAAAAJ:4TOpqqG69KYC
     user_id: y7QeN8UAAAAJ
     url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:4TOpqqG69KYC
+- slug: scholar-qxl8fj1gzncc
+  title: On the Statistical Mechanics of Attention
+  date: '2026-01-01'
+  year: 2026
+  venue: arXiv preprint arXiv:2610.17347, 2026
+  tags:
+  - Publication
+  authors:
+  - JYC Hu
+  - YA Chen
+  - M Su
+  - H Liu
+  description: arXiv preprint arXiv:2610.17347, 2026.
+  summary: arXiv preprint arXiv:2610.17347, 2026.
+  edit_post:
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:qxL8FJ1GzNcC
+    text: Google Scholar
+  scholar:
+    id: y7QeN8UAAAAJ:qxL8FJ1GzNcC
+    user_id: y7QeN8UAAAAJ
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:qxL8FJ1GzNcC
 - slug: scholar-klatu1dfn6uc
   title: 'Phys4D: Fine-Grained Physics-Consistent 4D Modeling from Video Diffusion'
   date: '2026-01-01'
