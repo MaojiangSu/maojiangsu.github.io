@@ -28,6 +28,30 @@ publications:
     id: y7QeN8UAAAAJ:ULOm3_A8WrAC
     user_id: y7QeN8UAAAAJ
     url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:ULOm3_A8WrAC
+- slug: scholar-aqlvkmm33-oc
+  title: Doob-Based Generative Policy Optimization
+  date: '2026-01-01'
+  year: 2026
+  venue: Neural Information Processing Systems (NeurIPS) 2026, 2026
+  tags:
+  - Publication
+  authors:
+  - M Su
+  - Q Zhu
+  - Y Xiao
+  - S Yu
+  - M Chen
+  - Z Wang
+  - H Liu
+  description: Neural Information Processing Systems (NeurIPS) 2026, 2026.
+  summary: Neural Information Processing Systems (NeurIPS) 2026, 2026.
+  edit_post:
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:aqlVkmm33-oC
+    text: Google Scholar
+  scholar:
+    id: y7QeN8UAAAAJ:aqlVkmm33-oC
+    user_id: y7QeN8UAAAAJ
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:aqlVkmm33-oC
 - slug: scholar-yowf2qjgphmc
   title: In-Context Universal Approximation, Compositional Generalization, and Algorithm Emulation
   date: '2026-01-01'
@@ -175,6 +199,32 @@ publications:
     id: y7QeN8UAAAAJ:Zph67rFs4hoC
     user_id: y7QeN8UAAAAJ
     url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:Zph67rFs4hoC
+- slug: scholar-4dmp91e08xmc
+  title: Towards Generalizing Pretrained All-Atom Representations to Unified Binder Design
+  date: '2026-01-01'
+  year: 2026
+  venue: arXiv preprint arXiv:2610.37994, 2026
+  tags:
+  - Publication
+  authors:
+  - M Su
+  - J Chen
+  - Q Zhu
+  - S Wu
+  - J Wang
+  - J Zhao
+  - G Ye
+  - Y Wen
+  - H Liu
+  description: arXiv preprint arXiv:2610.37994, 2026.
+  summary: arXiv preprint arXiv:2610.37994, 2026.
+  edit_post:
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:4DMP91E08xMC
+    text: Google Scholar
+  scholar:
+    id: y7QeN8UAAAAJ:4DMP91E08xMC
+    user_id: y7QeN8UAAAAJ
+    url: https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=y7QeN8UAAAAJ&pagesize=100&citation_for_view=y7QeN8UAAAAJ:4DMP91E08xMC
 - slug: scholar-lkgwnxomwfcc
   title: A theoretical analysis of discrete flow matching generative models
   date: '2025-01-01'
